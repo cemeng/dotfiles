@@ -1,1 +1,3 @@
-../.gitconfig
+[user]
+	name = Felix Tjandrawibawa
+	email = cemeng@gmail.com
