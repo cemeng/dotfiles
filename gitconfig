@@ -1,3 +1,9 @@
 [user]
 	name = Felix Tjandrawibawa
 	email = cemeng@gmail.com
+[alias]
+	co = checkout
+	br = branch
+	ci = commit
+	st = status
+	a = add

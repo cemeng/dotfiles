@@ -7,12 +7,10 @@ set number
 set ruler
 syntax on
 
-set t_Co=256
-colorscheme railscasts 
-
 let mapleader = ","
 
 call pathogen#infect()
+call pathogen#helptags()
 filetype plugin indent on
 
 " tabs -> spaces
@@ -34,6 +32,11 @@ nmap <leader>w :w
 " NERDTree Configuration
 nnoremap <leader>d :NERDTreeToggle<CR>
 nnoremap <F6><F6> :TlistToggle<CR>
+let NERDTreeShowBookmarks=1
+
+# >>>> COLOR CONFIG <<<<<
+set t_Co=256
+colorscheme railscasts 
 
 " Solarized Theme Configuration
 syntax enable
