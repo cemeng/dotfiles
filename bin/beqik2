@@ -1,0 +1,61 @@
+#! /bin/sh
+
+### BEGIN INIT INFO
+# Provides:          unicorn
+# Required-Start:    $local_fs $remote_fs $network $syslog
+# Required-Stop:     $local_fs $remote_fs $network $syslog
+# Default-Start:     2 3 4 5
+# Default-Stop:      0 1 6
+# Short-Description: starts the unicorn web server
+# Description:       starts unicorn
+### END INIT INFO
+
+APP_PATH=/Users/cemeng/prj/rexroth/beqik2
+CONFIG=/Users/cemeng/dotfiles/unicorn.rb
+DAEMON="sudo -i cd $APP_PATH && bundle exec unicorn_rails -c $CONFIG -l beqik2.dev:83 -D"
+DESC="beqik2 on unicorn"
+USER=cemeng
+PID=/Users/cemeng/etc/pids/unicorn.pid
+
+case "$1" in
+  start)
+	echo "Starting $DESC: "
+	$DAEMON
+	;;
+  stop)
+	echo "Stopping $DESC: "
+        kill -QUIT `cat $PID`
+	;;
+  restart)
+	echo "Restarting $DESC: "
+        kill -QUIT `cat $PID`
+	sleep 1
+	$DAEMON
+	;;
+  status)
+  if [ -f "$PID" ] ; then 
+    NUM_PID=`cat $PID`
+  else
+    echo "$DESC is not running"
+    exit 1
+  fi
+  
+  # even if the pid file exists we still want to check the system
+  RUNNING_PID=`ps -au$USER|grep $NUM_PID|awk '{print $2}'`      
+  if [ -z "$RUNNING_PID" ] ; then
+    echo "$DESC is not running"
+  else
+    echo "$DESC is running"
+  fi
+  ;;
+  reload)
+        echo "Reloading $DESC configuration: "
+        kill -HUP `cat $PID`
+        ;;
+  *)
+	echo "Usage: $NAME {start|stop|status|restart|reload}" >&2
+	exit 1
+	;;
+esac
+
+exit 0
