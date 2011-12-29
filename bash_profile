@@ -6,7 +6,7 @@ alias sp='be spec spec' #run all spec
 alias prails='be pry -r ./config/environment'
 alias gp="git log --pretty=format:'%h: %s (%an)'"
 #PS1='\h:\W$(__git_ps1 "(%s)") \u\$ '
-export PATH=$PATH:/usr/local/flex/bin:$HOME/.rbenv/bin
+export PATH=$PATH:/usr/local/flex/bin:$HOME/.rbenv/bin:$HOME/dotfiles/bin
 
 # RBENV 
 eval "$(rbenv init -)"

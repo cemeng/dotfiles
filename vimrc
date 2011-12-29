@@ -43,18 +43,19 @@ let NERDTreeShowBookmarks=1
 set t_Co=256
 " colorscheme railscasts 
 " colorscheme koehler 
+colorscheme darkblue
 
 " Solarized Theme Configuration
 syntax enable
 set background=dark
-colorscheme solarized
+" colorscheme solarized
 call togglebg#map("<F5>")
 
 " Different languages settings
 autocmd FileType ColdFusion setlocal ts=4 sts=4 sw=4 expandtab
 
 " Font
-set gfn=Menlo:h14
+set gfn=DejaVuSansMono:h16
 
 " BufSurf settings
 nmap <leader>b :BufSurfBack<CR>
