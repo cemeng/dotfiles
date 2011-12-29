@@ -1,0 +1,2 @@
+mxmlc +configname=air -output flex/bin-release/BeQIK2.swf -theme flex/assets/halo.swc -- flex/BeQIK2.mxml
+adl flex/bin-release/BeQIK2-app.xml -server=beqik2.dev

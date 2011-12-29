@@ -12,7 +12,9 @@
 
 APP_PATH=/Users/cemeng/prj/rexroth/beqik2
 CONFIG=/Users/cemeng/dotfiles/unicorn.rb
-DAEMON="sudo -i cd $APP_PATH && bundle exec unicorn_rails -c $CONFIG -l beqik2.dev:83 -D"
+APP_NAME=beqik2.dev
+PORT=80
+DAEMON="sudo -i cd $APP_PATH && bundle exec unicorn_rails -c $CONFIG -l $APP_NAME:$PORT -D"
 DESC="beqik2 on unicorn"
 USER=cemeng
 PID=/Users/cemeng/etc/pids/unicorn.pid
