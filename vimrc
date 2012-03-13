@@ -1,16 +1,19 @@
-" References:
+"References:
 " https://github.com/carlhuda/janus
 " http://davidbolton.net/blog/content/uploads/2010/08/vimrc.txt
 set nocompatible
 
 set number
 set ruler
+set hlsearch
 syntax on
 
 let mapleader = ","
 
 call pathogen#infect()
 call pathogen#helptags()
+filetype off
+syntax on
 filetype plugin indent on
 
 set directory=~/.vim/sessions/
@@ -41,21 +44,21 @@ let NERDTreeShowBookmarks=1
 
 " COLOR CONFIG 
 set t_Co=256
-" colorscheme railscasts 
-" colorscheme koehler 
-colorscheme darkblue
-
+colorscheme mustang 
 " Solarized Theme Configuration
 syntax enable
 set background=dark
 " colorscheme solarized
-call togglebg#map("<F5>")
+" call togglebg#map("<F5>")
 
 " Different languages settings
 autocmd FileType ColdFusion setlocal ts=4 sts=4 sw=4 expandtab
+" remove trailing whitespace upon saving
+autocmd FileType ruby autocmd BufWritePre <buffer> :%s/\s\+$//e
 
 " Font
-set gfn=DejaVuSansMono:h16
+"set gfn=DejaVuSansMono:h16
+set gfn=Menlo:h14
 
 " BufSurf settings
 nmap <leader>b :BufSurfBack<CR>
