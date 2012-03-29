@@ -4,4 +4,3 @@ cp zshrc ~/.zshrc
 #cp gitconfig ~/.gitconfig
 cp vimrc ~/.vimrc
 cp gvimrc ~/.gvimrc
-cp -R vim ~/.vim
