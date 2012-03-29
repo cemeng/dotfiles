@@ -1,11 +1,10 @@
-"References:
-" https://github.com/carlhuda/janus
-" http://davidbolton.net/blog/content/uploads/2010/08/vimrc.txt
 set nocompatible
 
 set number
 set ruler
 set hlsearch
+set splitright
+set splitbelow
 syntax on
 
 let mapleader = ","
@@ -36,11 +35,6 @@ nmap <leader>c :close<CR>
 nnoremap <F2><F2> :vsplit<CR>
 noremap <Space> <PageDown>
 noremap - <PageUp>
-
-" NERDTree Configuration
-nnoremap <leader>d :NERDTreeToggle<CR>
-nnoremap <F6><F6> :TlistToggle<CR>
-let NERDTreeShowBookmarks=1
 
 " COLOR CONFIG 
 set t_Co=256

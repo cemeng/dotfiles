@@ -2,6 +2,7 @@
 alias be='bundle exec'
 alias sp='be rspec spec' #run all spec
 alias prails='be pry -r ./config/environment'
+alias restart='powify server restart'
 
 # BeQIK aliases
 alias bq='cd ~/prj/rexroth/beqik2'
