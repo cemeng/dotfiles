@@ -1,5 +1,8 @@
 #!/usr/bin/env ruby
 
+# This should be used to initialize a new environment
+# with default vim setup
+
 require 'fileutils'
 require 'open-uri'
 
@@ -25,4 +28,9 @@ git_bundles.each do |url|
   `git clone -q #{url}`
 end
 
+# Not too sure about this..
 Dir["*/.git"].each {|f| FileUtils.rm_rf(f) }
+
+# Compile command-t
+FileUtils.cd('command-t/ruby/command-t')
+%x[ rbenv local system && ruby extconf.rb && make ]
