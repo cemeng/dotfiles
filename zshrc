@@ -32,6 +32,6 @@ COMPLETION_WAITING_DOTS="true"
 plugins=(rails ruby git)
 
 source $ZSH/oh-my-zsh.sh
-source .bash_profile
+source $HOME/.bash_profile
 # Customize to your needs...
 export PATH=/Users/cemeng/.rbenv/shims:/Applications/MacVim.app/Contents/MacOS:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/flex/bin:/Users/cemeng/.rbenv/bin:/Users/cemeng/dotfiles/bin
