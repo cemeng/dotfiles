@@ -16,6 +16,7 @@ git_bundles = %w{
   git://github.com/altercation/vim-colors-solarized.git
   git://git.wincent.com/command-t.git
   git://github.com/kchmck/vim-coffee-script.git
+  git://github.com/juvenn/mustache.vim.git
 }
 
 bundles_dir = "/Users/cemeng/.vim/bundle"
