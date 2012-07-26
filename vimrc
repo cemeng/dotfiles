@@ -5,6 +5,8 @@ set ruler
 set hlsearch
 set splitright
 set splitbelow
+set autoread
+
 syntax on
 
 let mapleader = ","
@@ -27,7 +29,7 @@ set shiftwidth=2
 
 " turn mouse on
 set mouse=a
- 
+
 " keys remapping
 nmap <leader>s :source ~/.vimrc
 nmap <leader>v :e ~/.vimrc
@@ -36,25 +38,34 @@ nnoremap <F2><F2> :vsplit<CR>
 noremap <Space> <PageDown>
 noremap - <PageUp>
 
-" COLOR CONFIG 
+nnoremap <CR> :nohlsearch<CR>/<BS>
+
+" Move lines up and down
+nnoremap <C-j> :m+<CR>==
+nnoremap <C-k> :m-2<CR>==
+inoremap <C-j> <Esc>:m+<CR>==gi
+inoremap <C-k> <Esc>:m-2<CR>==gi
+vnoremap <C-j> :m'>+<CR>gv=gv
+vnoremap <C-k> :m-2<CR>gv=gv
+
+" COLOR CONFIG
 set t_Co=256
-colorscheme mustang 
 " Solarized Theme Configuration
 syntax enable
 set background=dark
 " colorscheme solarized
-" call togglebg#map("<F5>")
+colorscheme mustang
 
 " Different languages settings
 autocmd FileType ColdFusion setlocal ts=4 sts=4 sw=4 expandtab
 " remove trailing whitespace upon saving
-autocmd FileType ruby autocmd BufWritePre <buffer> :%s/\s\+$//e
+autocmd FileType * autocmd BufWritePre <buffer> :%s/\s\+$//e
 
 " Font
-"set gfn=DejaVuSansMono:h16
-set gfn=Menlo:h14
+" Good fonts, 3rd party: Inconsolata, DejaVuSansMono
+" System font: Monaco
+set gfn=Inconsolata:h17
 
 " BufSurf settings
 nmap <leader>b :BufSurfBack<CR>
 nmap <leader>f :BufSurfForward<CR>
-
