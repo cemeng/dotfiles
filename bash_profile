@@ -1,7 +1,7 @@
 # Ruby and Rails aliases
 alias be='bundle exec'
-alias sp='be rspec spec' #run all spec
-alias prails='be pry -r ./config/environment'
+alias sp='.bin/rspec spec' #run all spec
+alias prails='bin/pry -r ./config/environment'
 alias restart='powify server restart'
 alias rgm='rails generate migration'
 alias dbm='rake db:migrate && rake spec:prepare'
@@ -23,7 +23,7 @@ alias grc='git rebase --continue'
 
 export PATH=/Applications/MacVim.app/Contents/MacOS:$PATH:/usr/local/flex/bin:$HOME/.rbenv/bin:$HOME/dotfiles/bin
 
-# RBENV 
+# RBENV
 eval "$(rbenv init -)"
 
 export EDITOR='vim'
