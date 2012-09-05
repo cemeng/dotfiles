@@ -13,8 +13,7 @@
 APP_PATH=/Users/cemeng/prj/rexroth/beqik2
 CONFIG=/Users/cemeng/dotfiles/unicorn.rb
 APP_NAME=beqik2.dev
-PORT=80
-DAEMON="sudo -i cd $APP_PATH && bundle exec unicorn_rails -c $CONFIG -l $APP_NAME:$PORT -D"
+DAEMON="cd $APP_PATH && bin/unicorn -c $CONFIG -D"
 DESC="beqik2 on unicorn"
 USER=cemeng
 PID=/Users/cemeng/etc/pids/unicorn.pid
@@ -35,15 +34,15 @@ case "$1" in
 	$DAEMON
 	;;
   status)
-  if [ -f "$PID" ] ; then 
+  if [ -f "$PID" ] ; then
     NUM_PID=`cat $PID`
   else
     echo "$DESC is not running"
     exit 1
   fi
-  
+
   # even if the pid file exists we still want to check the system
-  RUNNING_PID=`ps -au$USER|grep $NUM_PID|awk '{print $2}'`      
+  RUNNING_PID=`ps -au$USER|grep $NUM_PID|awk '{print $2}'`
   if [ -z "$RUNNING_PID" ] ; then
     echo "$DESC is not running"
   else
