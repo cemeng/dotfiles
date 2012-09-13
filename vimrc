@@ -69,3 +69,8 @@ set gfn=Inconsolata:h17
 " BufSurf settings
 nmap <leader>b :BufSurfBack<CR>
 nmap <leader>f :BufSurfForward<CR>
+
+" Randomize colorscheme everytime I open vim
+let mycolors = split(globpath(&rtp,"**/colors/*.vim"),"\n")
+exe 'so ' . mycolors[localtime() % len(mycolors)]
+unlet mycolors
