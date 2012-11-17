@@ -6,6 +6,17 @@
 require 'fileutils'
 require 'open-uri'
 
+root_dir = "/Users/cemeng/.vim"
+bundles_dir = "#{root_dir}/bundle"
+colors_dir = "#{root_dir}/colors"
+sessions_dir = "#{root_dir}/sessions"
+
+dirs = [ bundles_dir, colors_dir, sessions_dir ]
+for dir in dirs
+  FileUtils.rm_rf(dir)
+  FileUtils.mkdir(dir)
+end
+
 git_bundles = %w{
   git://github.com/tpope/vim-fugitive.git
   git://github.com/tpope/vim-git.git
@@ -19,12 +30,7 @@ git_bundles = %w{
   git://github.com/juvenn/mustache.vim.git
 }
 
-bundles_dir = "/Users/cemeng/.vim/bundle"
-
-FileUtils.rm_rf(bundles_dir)
-FileUtils.mkdir(bundles_dir)
 FileUtils.cd(bundles_dir)
-
 puts "Everyday I am bundling"
 git_bundles.each do |url|
   puts url
@@ -40,12 +46,7 @@ git_colorscheme = %w{
   https://raw.github.com/chriskempson/vim-tomorrow-theme/master/colors/Tomorrow-Night.vim
 }
 
-colors_dir = "/Users/cemeng/.vim/colors"
-
-FileUtils.rm_rf(colors_dir)
-FileUtils.mkdir(colors_dir)
 FileUtils.cd(colors_dir)
-
 puts "Installing colorschemes"
 git_colorscheme.each do |url|
   puts url
