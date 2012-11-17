@@ -4,5 +4,5 @@
 set -e
 
 for b in `git branch --merged | grep -v master | sed 's/ //g'`; do
-  git branch -d $b && git push origin :$b && git push joni :$b
+  git branch -d $b && git push origin :$b
 done
