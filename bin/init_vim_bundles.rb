@@ -25,6 +25,7 @@ FileUtils.rm_rf(bundles_dir)
 FileUtils.mkdir(bundles_dir)
 FileUtils.cd(bundles_dir)
 
+puts "Everyday I am bundling"
 git_bundles.each do |url|
   puts url
   `git clone -q #{url}`
@@ -32,6 +33,24 @@ end
 
 # Not too sure about this..
 Dir["*/.git"].each {|f| FileUtils.rm_rf(f) }
+
+# Colors
+git_colorscheme = %w{
+  https://raw.github.com/chriskempson/vim-tomorrow-theme/master/colors/Tomorrow-Night-Blue.vim
+  https://raw.github.com/chriskempson/vim-tomorrow-theme/master/colors/Tomorrow-Night.vim
+}
+
+colors_dir = "/Users/cemeng/.vim/colors"
+
+FileUtils.rm_rf(colors_dir)
+FileUtils.mkdir(colors_dir)
+FileUtils.cd(colors_dir)
+
+puts "Installing colorschemes"
+git_colorscheme.each do |url|
+  puts url
+  `wget #{url}`
+end
 
 # Compile command-t
 FileUtils.cd('command-t/ruby/command-t')
