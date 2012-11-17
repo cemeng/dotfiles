@@ -54,7 +54,7 @@ set t_Co=256
 syntax enable
 set background=dark
 " colorscheme solarized
-colorscheme mustang
+colorscheme Tomorrow-Night-Blue
 
 " Different languages settings
 autocmd FileType ColdFusion setlocal ts=4 sts=4 sw=4 expandtab
@@ -64,13 +64,13 @@ autocmd FileType * autocmd BufWritePre <buffer> :%s/\s\+$//e
 " Font
 " Good fonts, 3rd party: Inconsolata, DejaVuSansMono
 " System font: Monaco
-set gfn=Inconsolata:h17
+set gfn=Inconsolata:h16
 
 " BufSurf settings
 nmap <leader>b :BufSurfBack<CR>
 nmap <leader>f :BufSurfForward<CR>
 
 " Randomize colorscheme everytime I open vim
-let mycolors = split(globpath(&rtp,"**/colors/*.vim"),"\n")
-exe 'so ' . mycolors[localtime() % len(mycolors)]
-unlet mycolors
+" let mycolors = split(globpath(&rtp,"**/colors/*.vim"),"\n")
+" exe 'so ' . mycolors[localtime() % len(mycolors)]
+" unlet mycolors
