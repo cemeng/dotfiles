@@ -18,10 +18,10 @@ alias ga='git add'
 alias gaa='git add --all'
 alias gp="git log --pretty=format:'%h: %s (%an)'"
 alias gss='git stash save'
-alias gd='git df'
+alias gd='git diff'
 alias grc='git rebase --continue'
 
-export PATH=/Applications/MacVim.app/Contents/MacOS:$PATH:/usr/local/flex/bin:$HOME/.rbenv/bin:$HOME/dotfiles/bin
+export PATH=/Applications/MacVim.app/Contents/MacOS:$PATH:/usr/local/flex/bin:$HOME/.rbenv/bin:$HOME/dotfiles/bin:/usr/local/sbin
 
 # RBENV
 eval "$(rbenv init -)"
