@@ -21,10 +21,13 @@ alias gss='git stash save'
 alias gd='git diff'
 alias grc='git rebase --continue'
 
-export PATH=/Applications/MacVim.app/Contents/MacOS:$PATH:/usr/local/flex/bin:$HOME/.rbenv/bin:$HOME/dotfiles/bin:/usr/local/sbin
+# export PATH=/Applications/MacVim.app/Contents/MacOS:$PATH:/usr/local/flex/bin:$HOME/.rbenv/bin:$HOME/dotfiles/bin:/usr/local/sbin
+export PATH=/Users/cemeng/.rbenv/shims:/Applications/MacVim.app/Contents/MacOS:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/flex/bin:/Users/cemeng/.rbenv/bin:/Users/cemeng/dotfiles/bin:/usr/local/sbin
 
 # RBENV
 eval "$(rbenv init -)"
 
 export EDITOR='vim'
 export BUNDLER_BLACKLIST="metrical churn flay reek roodi rcov saikuro rails_best_practices"
+
+alias rake='noglob rake'
