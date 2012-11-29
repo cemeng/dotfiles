@@ -74,3 +74,5 @@ nmap <leader>f :BufSurfForward<CR>
 " let mycolors = split(globpath(&rtp,"**/colors/*.vim"),"\n")
 " exe 'so ' . mycolors[localtime() % len(mycolors)]
 " unlet mycolors
+"
+set runtimepath^=~/.vim/bundle/ctrlp.vim

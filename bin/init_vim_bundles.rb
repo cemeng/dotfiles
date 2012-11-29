@@ -28,6 +28,7 @@ git_bundles = %w{
   git://git.wincent.com/command-t.git
   git://github.com/kchmck/vim-coffee-script.git
   git://github.com/juvenn/mustache.vim.git
+  git://github.com/kien/ctrlp.vim.git
 }
 
 FileUtils.cd(bundles_dir)
