@@ -17,7 +17,7 @@ for dir in dirs
   FileUtils.mkdir(dir)
 end
 
-git_bundles = %w{
+all_the_things = %w{
   git://github.com/tpope/vim-fugitive.git
   git://github.com/tpope/vim-git.git
   git://github.com/tpope/vim-markdown.git
@@ -25,15 +25,20 @@ git_bundles = %w{
   git://github.com/tpope/vim-surround.git
   git://github.com/vim-ruby/vim-ruby.git
   git://github.com/altercation/vim-colors-solarized.git
-  git://git.wincent.com/command-t.git
   git://github.com/kchmck/vim-coffee-script.git
-  git://github.com/juvenn/mustache.vim.git
   git://github.com/kien/ctrlp.vim.git
 }
 
+# Trying these new shiny things
+experimentals = %w{
+  git://github.com/scrooloose/syntastic.git
+}
+
+all_the_things | experimentals
+
 FileUtils.cd(bundles_dir)
-puts "Everyday I am bundling"
-git_bundles.each do |url|
+puts "Install all the things"
+all_the_things.each do |url|
   puts url
   `git clone -q #{url}`
 end
@@ -53,7 +58,3 @@ git_colorscheme.each do |url|
   puts url
   `wget #{url}`
 end
-
-# Compile command-t
-FileUtils.cd('command-t/ruby/command-t')
-%x[ rbenv local system && ruby extconf.rb && make ]
