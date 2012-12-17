@@ -53,18 +53,15 @@ set t_Co=256
 " Solarized Theme Configuration
 syntax enable
 set background=dark
-" colorscheme solarized
-colorscheme Tomorrow-Night-Blue
+colorscheme Tomorrow-Night
 
-" Different languages settings
-autocmd FileType ColdFusion setlocal ts=4 sts=4 sw=4 expandtab
 " remove trailing whitespace upon saving
 autocmd FileType * autocmd BufWritePre <buffer> :%s/\s\+$//e
 
 " Font
 " Good fonts, 3rd party: Inconsolata, DejaVuSansMono
 " System font: Monaco
-set gfn=Inconsolata:h16
+set gfn=Source\ Code\ Pro\ Light:h14
 
 " BufSurf settings
 nmap <leader>b :BufSurfBack<CR>

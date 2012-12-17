@@ -34,7 +34,7 @@ experimentals = %w{
   git://github.com/scrooloose/syntastic.git
 }
 
-all_the_things | experimentals
+all_the_things = all_the_things | experimentals
 
 FileUtils.cd(bundles_dir)
 puts "Install all the things"

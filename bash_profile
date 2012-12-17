@@ -27,7 +27,7 @@ export PATH=/Users/cemeng/.rbenv/shims:/Applications/MacVim.app/Contents/MacOS:/
 # RBENV
 eval "$(rbenv init -)"
 
-export EDITOR='vim'
+export EDITOR='mvim'
 export BUNDLER_BLACKLIST="metrical churn flay reek roodi rcov saikuro rails_best_practices"
 
 alias rake='noglob rake'
