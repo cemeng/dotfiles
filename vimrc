@@ -73,3 +73,7 @@ nmap <leader>f :BufSurfForward<CR>
 " unlet mycolors
 "
 set runtimepath^=~/.vim/bundle/ctrlp.vim
+
+" Ignore flex directory when searching with ctrlp
+set wildignore+=*/flex/*
+
