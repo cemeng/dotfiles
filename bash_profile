@@ -20,6 +20,7 @@ alias gp="git log --pretty=format:'%h: %s (%an)'"
 alias gss='git stash save'
 alias gd='git diff'
 alias grc='git rebase --continue'
+alias glog="git log --graph --pretty=format:'%C(yellow)%h%Cblue%d%Creset %s %C(white) %an, %ar%Creset'"
 
 # export PATH=/Applications/MacVim.app/Contents/MacOS:$PATH:/usr/local/flex/bin:$HOME/.rbenv/bin:$HOME/dotfiles/bin:/usr/local/sbin
 export PATH=/Users/cemeng/.rbenv/shims:/Applications/MacVim.app/Contents/MacOS:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/flex/bin:/Users/cemeng/.rbenv/bin:/Users/cemeng/dotfiles/bin:/usr/local/sbin

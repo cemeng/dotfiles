@@ -32,6 +32,7 @@ all_the_things = %w{
 # Trying these new shiny things
 experimentals = %w{
   git://github.com/scrooloose/syntastic.git
+  git://github.com/Lokaltog/vim-powerline.git
 }
 
 all_the_things = all_the_things | experimentals
