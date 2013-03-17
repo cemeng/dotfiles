@@ -50,6 +50,7 @@ Dir["*/.git"].each {|f| FileUtils.rm_rf(f) }
 # Colors
 git_colorscheme = %w{
   https://raw.github.com/chriskempson/vim-tomorrow-theme/master/colors/Tomorrow-Night-Blue.vim
+  https://raw.github.com/chriskempson/vim-tomorrow-theme/master/colors/Tomorrow-Night-Bright.vim
   https://raw.github.com/chriskempson/vim-tomorrow-theme/master/colors/Tomorrow-Night.vim
 }
 
