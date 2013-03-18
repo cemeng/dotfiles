@@ -53,10 +53,14 @@ set t_Co=256
 " Solarized Theme Configuration
 syntax enable
 set background=dark
-colorscheme Tomorrow-Night
+colorscheme Tomorrow-Night-Bright
 
 " remove trailing whitespace upon saving
 autocmd FileType * autocmd BufWritePre <buffer> :%s/\s\+$//e
+
+" AngularJS syntax highlight w/ javascript-libraries-syntax
+autocmd BufReadPre *.js let b:javascript_lib_use_angularjs = 1
+autocmd BufReadPre *.coffee let b:javascript_lib_use_angularjs = 1
 
 " Font
 " Good fonts, 3rd party: Inconsolata, DejaVuSansMono
