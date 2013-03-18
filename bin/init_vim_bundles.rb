@@ -24,15 +24,16 @@ all_the_things = %w{
   git://github.com/tpope/vim-rails.git
   git://github.com/tpope/vim-surround.git
   git://github.com/vim-ruby/vim-ruby.git
-  git://github.com/altercation/vim-colors-solarized.git
   git://github.com/kchmck/vim-coffee-script.git
   git://github.com/kien/ctrlp.vim.git
+  git://github.com/ton/vim-bufsurf.git
 }
 
 # Trying these new shiny things
 experimentals = %w{
   git://github.com/scrooloose/syntastic.git
   git://github.com/Lokaltog/vim-powerline.git
+  git://github.com/othree/javascript-libraries-syntax.vim.git
 }
 
 all_the_things = all_the_things | experimentals
@@ -50,6 +51,7 @@ Dir["*/.git"].each {|f| FileUtils.rm_rf(f) }
 # Colors
 git_colorscheme = %w{
   https://raw.github.com/chriskempson/vim-tomorrow-theme/master/colors/Tomorrow-Night-Blue.vim
+  https://raw.github.com/chriskempson/vim-tomorrow-theme/master/colors/Tomorrow-Night-Bright.vim
   https://raw.github.com/chriskempson/vim-tomorrow-theme/master/colors/Tomorrow-Night.vim
 }
 
