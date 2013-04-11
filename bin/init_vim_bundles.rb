@@ -27,6 +27,7 @@ all_the_things = %w{
   git://github.com/kchmck/vim-coffee-script.git
   git://github.com/kien/ctrlp.vim.git
   git://github.com/ton/vim-bufsurf.git
+  git://github.com/godlygeek/tabular.git
 }
 
 # Trying these new shiny things
