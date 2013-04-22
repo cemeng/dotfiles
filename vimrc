@@ -65,7 +65,7 @@ autocmd BufReadPre *.coffee let b:javascript_lib_use_angularjs = 1
 " Font
 " Good fonts, 3rd party: Inconsolata, DejaVuSansMono
 " System font: Monaco
-set gfn=Source\ Code\ Pro\ Light:h14
+set gfn=Source\ Code\ Pro\ Light:h16
 
 " BufSurf settings
 nmap <leader>b :BufSurfBack<CR>
