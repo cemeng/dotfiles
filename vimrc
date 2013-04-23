@@ -83,3 +83,9 @@ set wildignore+=*/flex/*,*/source_maps/*
 
 " Fold indentation coffeescript - hit zi to toggle
 au BufNewFile,BufReadPost *.coffee setl foldmethod=indent nofoldenable
+
+" Disabling arrow keys for navigation
+nnoremap <up> <nop>
+nnoremap <down> <nop>
+nnoremap <left> <nop>
+nnoremap <right> <nop>
