@@ -89,3 +89,6 @@ nnoremap <up> <nop>
 nnoremap <down> <nop>
 nnoremap <left> <nop>
 nnoremap <right> <nop>
+
+" Remap VIM 0 to first non-blank character
+map 0 ^
