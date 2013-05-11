@@ -36,6 +36,7 @@ experimentals = %w{
   git://github.com/scrooloose/syntastic.git
   git://github.com/Lokaltog/vim-powerline.git
   git://github.com/othree/javascript-libraries-syntax.vim.git
+  git://github.com/mileszs/ack.vim.git
 }
 
 all_the_things = all_the_things | experimentals
