@@ -60,7 +60,7 @@ autocmd FileType * autocmd BufWritePre <buffer> :%s/\s\+$//e
 " Font
 " Good fonts, 3rd party: Inconsolata, DejaVuSansMono
 " System font: Monaco
-set gfn=Source\ Code\ Pro\ Light:h16
+set gfn=Source\ Code\ Pro\ Light:h14
 
 " BufSurf settings
 nmap <leader>b :BufSurfBack<CR>
@@ -82,3 +82,10 @@ nnoremap <right> <nop>
 
 " Remap VIM 0 to first non-blank character
 map 0 ^
+
+" Enable autocomplete
+let g:rubycomplete_buffer_loading = 1
+let g:rubycomplete_rails = 1
+
+" Use silver search to replace ack
+let g:ackprg = 'ag --nogroup --nocolor --column'
