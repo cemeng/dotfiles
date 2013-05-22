@@ -1,2 +1,4 @@
---type-add=ruby=.haml,.rake
---type-add=css=.scss
+--type-set=ruby=.haml,.rake
+--type-set=css=.scss
+--type-set=css=.sass
+--type-set=coffee=.coffee
