@@ -5,7 +5,7 @@ alias prails='bin/pry -r ./config/environment'
 alias restart='powify server restart'
 alias rgm='rails generate migration'
 alias dbm='rake db:migrate && rake spec:prepare'
-alias fs='foreman start'
+alias fs='be foreman start'
 
 # BeQIK aliases
 alias bq='cd ~/prj/rexroth/beqik2'
