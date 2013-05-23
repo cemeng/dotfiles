@@ -2,6 +2,7 @@
 
 # This should be used to initialize a new environment
 # with default vim setup
+# TODO: should've just use Vundle instead
 
 require 'fileutils'
 require 'open-uri'
@@ -29,14 +30,13 @@ all_the_things = %w{
   git://github.com/ton/vim-bufsurf.git
   git://github.com/godlygeek/tabular.git
   git://github.com/scrooloose/nerdtree.git
+  git://github.com/rking/ag.vim
 }
 
 # Trying these new shiny things
 experimentals = %w{
   git://github.com/scrooloose/syntastic.git
   git://github.com/Lokaltog/vim-powerline.git
-  git://github.com/othree/javascript-libraries-syntax.vim.git
-  git://github.com/mileszs/ack.vim.git
 }
 
 all_the_things = all_the_things | experimentals

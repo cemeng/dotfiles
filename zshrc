@@ -33,3 +33,6 @@ plugins=(rails3 ruby git)
 
 source $ZSH/oh-my-zsh.sh
 source $HOME/.bash_profile
+
+# STOP CORRECTING ME!
+unsetopt correct
