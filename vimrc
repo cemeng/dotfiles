@@ -31,13 +31,11 @@ set shiftwidth=2
 set mouse=a
 
 " keys remapping
-nmap <leader>s :source ~/.vimrc
-nmap <leader>v :e ~/.vimrc
+nmap <leader>w :w<CR>
+nmap <leader>x :x<CR>
 nmap <leader>c :close<CR>
-nnoremap <F2><F2> :vsplit<CR>
-noremap <Space> <PageDown>
-noremap - <PageUp>
 
+" cancel search highlight
 nnoremap <CR> :nohlsearch<CR>/<BS>
 
 " Move lines up and down
@@ -58,10 +56,6 @@ colorscheme Tomorrow-Night-Bright
 " remove trailing whitespace upon saving
 autocmd FileType * autocmd BufWritePre <buffer> :%s/\s\+$//e
 
-" AngularJS syntax highlight w/ javascript-libraries-syntax
-autocmd BufReadPre *.js let b:javascript_lib_use_angularjs = 1
-autocmd BufReadPre *.coffee let b:javascript_lib_use_angularjs = 1
-
 " Font
 " Good fonts, 3rd party: Inconsolata, DejaVuSansMono
 " System font: Monaco
@@ -71,11 +65,6 @@ set gfn=Source\ Code\ Pro\ Light:h16
 nmap <leader>b :BufSurfBack<CR>
 nmap <leader>f :BufSurfForward<CR>
 
-" Randomize colorscheme everytime I open vim
-" let mycolors = split(globpath(&rtp,"**/colors/*.vim"),"\n")
-" exe 'so ' . mycolors[localtime() % len(mycolors)]
-" unlet mycolors
-"
 set runtimepath^=~/.vim/bundle/ctrlp.vim
 
 " Ignore flex directory when searching with ctrlp
