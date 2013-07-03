@@ -34,7 +34,7 @@ set mouse=a
 nmap <leader>w :w<CR>
 nmap <leader>x :x<CR>
 nmap <leader>c :close<CR>
-inoremap jj <ESC>
+inoremap jj <ESC>:w<CR>
 
 " cancel search highlight
 nnoremap <CR> :nohlsearch<CR>/<BS>
