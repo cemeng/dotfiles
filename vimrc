@@ -106,11 +106,7 @@ let g:rails_projections = {
       \   "command": "controller",
       \   "test"   : "spec/controllers/%s_controller_spec.rb",
       \ },
-      \ "app/controllers/json/*_controller.rb": {
-      \   "command": "controller",
-      \   "test"   : "spec/controllers/%s_controller_spec.rb",
-      \ },
-      \ "app/controllers/xml/*_controller.rb": {
+      \ "app/controllers/api/*_controller.rb": {
       \   "command": "controller",
       \   "test"   : "spec/controllers/%s_controller_spec.rb",
       \ }
