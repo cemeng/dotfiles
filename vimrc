@@ -104,11 +104,11 @@ let g:rails_projections = {
       \ },
       \ "app/controllers/*_controller.rb": {
       \   "command": "controller",
-      \   "test"   : "spec/controllers/%s_controller_spec.rb",
+      \   "test"   : "spec/requests/%s_request_spec.rb",
       \ },
       \ "app/controllers/api/*_controller.rb": {
       \   "command": "controller",
-      \   "test"   : "spec/controllers/%s_controller_spec.rb",
+      \   "test"   : "spec/requests/%s_request_spec.rb",
       \ }
       \}
 " https://gist.github.com/cloud8421/5490033

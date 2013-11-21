@@ -11,6 +11,7 @@ alias bq="cd ~/prj/rexroth/beqik2"
 alias vg="sed -i "" "s/virgil/virgildev/g" flex/BeQIK2-app.xml"
 alias uvg="git co -- flex/BeQIK2-app.xml"
 alias lndr="bq && ln -s /Volumes/BRAUDWF/BRAUPUBLISH drawings"
+alias rbq="sudo '/Applications/Adobe Flash Builder 4.6/sdks/4.6.0/bin/adl' -runtime '/Applications/Adobe Flash Builder 4.6/sdks/4.6.0/runtimes/air/mac' /Users/cemeng/prj/rexroth/beqik2-workspace/bin-debug/BeQIK2-app.xml /Users/cemeng/prj/rexroth/beqik2-workspace/bin-debug -- -server=beqik2_au:5000 -appname=virgil"
 
 # Git aliases
 alias g="git st"
@@ -33,7 +34,7 @@ export EDITOR="vim"
 export BUNDLER_EDITOR="mvim"
 export BUNDLER_BLACKLIST="metrical churn flay reek roodi rcov saikuro rails_best_practices"
 
-alias rake="noglob rake"
+# alias rake="noglob rake"
 
 # Ruby GC tweaks for faster spec runs
 export RUBY_GC_MALLOC_LIMIT=1000000000
