@@ -25,10 +25,12 @@ alias gorg="git br -r|grep origin"
 alias grpo="git remote prune origin"
 
 # export PATH=/Applications/MacVim.app/Contents/MacOS:$PATH:/usr/local/flex/bin:$HOME/.rbenv/bin:$HOME/dotfiles/bin:/usr/local/sbin
-export PATH=/Users/cemeng/.rbenv/shims:/Applications/MacVim.app/Contents/MacOS:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/flex/bin:/Users/cemeng/.rbenv/bin:/Users/cemeng/dotfiles/bin:/usr/local/sbin
+export PATH=/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/bin:/usr/X11/bin:/usr/local/flex/bin:/Users/cemeng/dotfiles/bin:/usr/local/sbin
 
-# RBENV
-eval "$(rbenv init -)"
+# CHRUBY
+source /usr/local/share/chruby/chruby.sh
+source /usr/local/share/chruby/auto.sh
+chruby ruby-2.1.0
 
 export EDITOR="vim"
 export BUNDLER_EDITOR="mvim"
