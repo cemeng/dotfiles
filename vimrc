@@ -7,6 +7,9 @@ set splitright
 set splitbelow
 set autoread
 
+set noerrorbells
+set visualbell
+
 syntax on
 
 let mapleader = ","
