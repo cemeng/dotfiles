@@ -163,7 +163,8 @@ my $curdb = "";         # is dealing with this db
 my $curCreatedbSQL="";  # the sql of create current database
 my $headerFlag = 1;     # Whether is in the dump header
 my $dumpHeader = "";
-open (TABFILE, ">>STDERR");
+# open (TABFILE, ">>STDERR");
+my $out = *STDOUT;
 my $ifh;
 if($file eq ""){
   $ifh = *STDIN;
@@ -189,8 +190,8 @@ while(<$ifh>){
     if($db ne ""  && $tabcount == 0 && $alltable ==0){exit 0;}
     $curtab = $1;
     $inTableFlag = 0;
-    print TABFILE "-- Table Finished";
-    close (TABFILE);
+    # print $out "-- Table Finished";
+    # close ($out);
     if($alltable == 1){
       $inTableFlag=1;
     }else{
@@ -204,15 +205,14 @@ while(<$ifh>){
       }
     }
     if($inTableFlag == 1 && $inDBFlag == 1){
-      open (TABFILE, ">>$outputdir"."$curdb"."-$curtab"."-$file");
-      # my $out = *STDOUT;
+      # open (TABFILE, ">>$outputdir"."$curdb"."-$curtab"."-$file");
       # print $out "$dumpHeader";
       # print TABFILE "$dumpHeader";
-      print TABFILE "\n\n";
+      print $out "\n\n";
       if( $ignoreUse != 1 ){
-        print TABFILE $curCreatedbSQL;
-      	print TABFILE "\n\n";
-        print TABFILE "USE `$curdb`;\n\n";
+        print $out $curCreatedbSQL;
+      	print $out "\n\n";
+        print $out "USE `$curdb`;\n\n";
       }
     }
   }elsif($_ =~ /^CREATE DATABASE.*;$/){
@@ -223,6 +223,12 @@ while(<$ifh>){
     # do nothing;
   }else{
     if($headerFlag == 1) {$dumpHeader .= $_};
-    if($inTableFlag == 1 && $inDBFlag == 1) {print TABFILE $_;}
+    if($inTableFlag == 1 && $inDBFlag == 1) {
+      # only print INSERT STATEMENT
+      if ($_ =~ m/^INSERT/) {
+        $_ =~ s/;$/ ON DUPLICATE KEY UPDATE id=id;/g;
+        print $out $_;
+      }
+    }
   }
 }
