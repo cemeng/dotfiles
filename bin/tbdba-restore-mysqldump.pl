@@ -204,10 +204,10 @@ while(<$ifh>){
       }
     }
     if($inTableFlag == 1 && $inDBFlag == 1){
-      open (TABFILE, ">>$outputdir"."split-$curdb"."-$curtab".".sql");
-      open (TABFILE, *STDOUT);
-      my $out = *STDOUT;
-      print $out "$dumpHeader";
+      open (TABFILE, ">>$outputdir"."$curdb"."-$curtab"."-$file");
+      # my $out = *STDOUT;
+      # print $out "$dumpHeader";
+      # print TABFILE "$dumpHeader";
       print TABFILE "\n\n";
       if( $ignoreUse != 1 ){
         print TABFILE $curCreatedbSQL;
