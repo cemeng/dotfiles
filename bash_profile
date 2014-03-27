@@ -24,8 +24,11 @@ alias glog="git log --graph --pretty=format:'%C(yellow)%h%Cblue%d%Creset %s %C(w
 alias gorg="git br -r|grep origin"
 alias grpo="git remote prune origin"
 
+# Projects
+alias actsky="cd ~/prj/activ-sky"
+
 # export PATH=/Applications/MacVim.app/Contents/MacOS:$PATH:/usr/local/flex/bin:$HOME/.rbenv/bin:$HOME/dotfiles/bin:/usr/local/sbin
-export PATH=/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/bin:/usr/X11/bin:/usr/local/flex/bin:/Users/cemeng/dotfiles/bin:/usr/local/sbin
+export PATH=/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/bin:/usr/X11/bin:/usr/local/flex/bin:/Users/cemeng/dotfiles/bin:/usr/local/sbin:~/prj/ansible/bin
 
 # CHRUBY
 source /usr/local/share/chruby/chruby.sh
