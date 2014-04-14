@@ -32,7 +32,7 @@ export PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:/usr/local
 # CHRUBY
 source /usr/local/share/chruby/chruby.sh
 source /usr/local/share/chruby/auto.sh
-chruby ruby-2.1.0
+chruby ruby-2.1.1
 
 export EDITOR="vim"
 export BUNDLER_EDITOR="mvim"
