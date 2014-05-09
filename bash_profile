@@ -41,7 +41,6 @@ chruby ruby-2.1.1
 
 export EDITOR="vim"
 export BUNDLER_EDITOR="mvim"
-export BUNDLER_BLACKLIST="metrical churn flay reek roodi rcov saikuro rails_best_practices"
 
 # Ruby GC tweaks for faster spec runs
 # export RUBY_GC_MALLOC_LIMIT=1000000000

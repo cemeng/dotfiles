@@ -73,7 +73,7 @@ nmap <leader>f :BufSurfForward<CR>
 set runtimepath^=~/.vim/bundle/ctrlp.vim
 
 " Ignore flex directory when searching with ctrlp
-set wildignore+=*/flex/*,*/source_maps/*
+set wildignore+=*/flex/*,*/source_maps/*,*/tmp/*
 
 " Fold indentation coffeescript - hit zi to toggle
 au BufNewFile,BufReadPost *.coffee setl foldmethod=indent nofoldenable
