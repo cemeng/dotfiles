@@ -12,13 +12,14 @@ bundles_dir = "#{root_dir}/bundle"
 colors_dir = "#{root_dir}/colors"
 sessions_dir = "#{root_dir}/sessions"
 
-dirs = [ bundles_dir, colors_dir, sessions_dir ]
-for dir in dirs
+dirs = [bundles_dir, colors_dir, sessions_dir]
+dirs.each do |dir|
   FileUtils.rm_rf(dir)
   FileUtils.mkdir(dir)
 end
 
-all_the_things = %w{
+all_the_things = %w(
+  git://github.com/tpope/vim-endwise.git
   git://github.com/tpope/vim-fugitive.git
   git://github.com/tpope/vim-git.git
   git://github.com/tpope/vim-markdown.git
@@ -31,13 +32,13 @@ all_the_things = %w{
   git://github.com/godlygeek/tabular.git
   git://github.com/scrooloose/nerdtree.git
   git://github.com/rking/ag.vim
-}
+)
 
 # Trying these new shiny things
-experimentals = %w{
+experimentals = %w(
   git://github.com/scrooloose/syntastic.git
   git://github.com/Lokaltog/vim-powerline.git
-}
+)
 
 all_the_things = all_the_things | experimentals
 
@@ -52,11 +53,11 @@ end
 Dir["*/.git"].each {|f| FileUtils.rm_rf(f) }
 
 # Colors
-git_colorscheme = %w{
+git_colorscheme = %w(
   https://raw.github.com/chriskempson/vim-tomorrow-theme/master/colors/Tomorrow-Night-Blue.vim
   https://raw.github.com/chriskempson/vim-tomorrow-theme/master/colors/Tomorrow-Night-Bright.vim
   https://raw.github.com/chriskempson/vim-tomorrow-theme/master/colors/Tomorrow-Night.vim
-}
+)
 
 FileUtils.cd(colors_dir)
 puts "Installing colorschemes"
