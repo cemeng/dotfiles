@@ -56,7 +56,7 @@ set t_Co=256
 " Solarized Theme Configuration
 syntax enable
 set background=dark
-colorscheme Tomorrow-Night-Bright
+colorscheme Tomorrow-Night
 
 " remove trailing whitespace upon saving
 autocmd FileType * autocmd BufWritePre <buffer> :%s/\s\+$//e
@@ -64,7 +64,7 @@ autocmd FileType * autocmd BufWritePre <buffer> :%s/\s\+$//e
 " Font
 " Good fonts, 3rd party: Inconsolata, DejaVuSansMono
 " System font: Monaco
-set gfn=Source\ Code\ Pro\ Light:h14
+set gfn=Source\ Code\ Pro\ Light:h12
 
 " BufSurf settings
 nmap <leader>b :BufSurfBack<CR>
