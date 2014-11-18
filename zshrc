@@ -36,3 +36,6 @@ source $HOME/.bash_profile
 
 # STOP CORRECTING ME!
 unsetopt correct
+
+# Without this rake with argument won't work (Octopress)
+unsetopt nomatch
