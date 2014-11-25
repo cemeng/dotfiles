@@ -133,3 +133,5 @@ if has("autocmd")
   autocmd VimEnter * :call SetupCtrlP()
   autocmd FileType actionscript,mxml setlocal nosmarttab noexpandtab shiftwidth=4 tabstop=4
 endif
+" show airline even when no split
+set laststatus=2
