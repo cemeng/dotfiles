@@ -37,10 +37,12 @@ all_the_things = %w(
 # Trying these new shiny things
 experimentals = %w(
   git://github.com/scrooloose/syntastic.git
-  git://github.com/Lokaltog/vim-powerline.git
+  git://github.com/bling/vim-airline.git
+  git://github.com/airblade/vim-gitgutter.git
 )
 
-all_the_things = all_the_things | experimentals
+# git://github.com/Lokaltog/vim-powerline.git
+all_the_things = all_the_things + experimentals
 
 FileUtils.cd(bundles_dir)
 puts "Install all the things"
@@ -50,7 +52,7 @@ all_the_things.each do |url|
 end
 
 # Not too sure about this..
-Dir["*/.git"].each {|f| FileUtils.rm_rf(f) }
+Dir[ "*/.git" ].each { |f| FileUtils.rm_rf(f) }
 
 # Colors
 git_colorscheme = %w(
