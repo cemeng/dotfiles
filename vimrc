@@ -119,6 +119,9 @@ let g:rails_projections = {
       \}
 " https://gist.github.com/cloud8421/5490033
 
+" NERDTree toggle
+map <C-n> :NERDTreeToggle<CR>
+
 " CtrlP auto cache clearing
 function! SetupCtrlP()
   if exists("g:loaded_ctrlp") && g:loaded_ctrlp
