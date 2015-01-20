@@ -7,10 +7,10 @@
 require 'fileutils'
 require 'open-uri'
 
-root_dir = "/Users/cemeng/.vim"
-bundles_dir = "#{root_dir}/bundle"
-colors_dir = "#{root_dir}/colors"
-sessions_dir = "#{root_dir}/sessions"
+root_dir      = '/Users/cemeng/.vim'
+bundles_dir   = "#{root_dir}/bundle"
+colors_dir    = "#{root_dir}/colors"
+sessions_dir  = "#{root_dir}/sessions"
 
 dirs = [bundles_dir, colors_dir, sessions_dir]
 dirs.each do |dir|
@@ -18,7 +18,7 @@ dirs.each do |dir|
   FileUtils.mkdir(dir)
 end
 
-all_the_things = %w(
+plugins = %w(
   git://github.com/tpope/vim-endwise.git
   git://github.com/tpope/vim-fugitive.git
   git://github.com/tpope/vim-markdown.git
@@ -33,20 +33,15 @@ all_the_things = %w(
   git://github.com/airblade/vim-gitgutter.git
 )
 
-# Trying these new shiny things
-experimentals = %w()
-
-all_the_things = all_the_things + experimentals
-
 FileUtils.cd(bundles_dir)
-puts "Install all the things"
-all_the_things.each do |url|
+puts 'Installing plugins'
+plugins.each do |url|
   puts url
   `git clone -q #{url}`
 end
 
-# Not too sure about this..
-Dir[ "*/.git" ].each { |f| FileUtils.rm_rf(f) }
+# Actually not sure what we need this for
+Dir['*/.git'].each { |f| FileUtils.rm_rf(f) }
 
 # Colors
 git_colorscheme = %w(
@@ -56,7 +51,7 @@ git_colorscheme = %w(
 )
 
 FileUtils.cd(colors_dir)
-puts "Installing colorschemes"
+puts 'Installing colorschemes'
 git_colorscheme.each do |url|
   puts url
   `wget #{url}`

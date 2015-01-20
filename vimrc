@@ -66,10 +66,6 @@ autocmd FileType * autocmd BufWritePre <buffer> :%s/\s\+$//e
 " System font: Monaco
 set gfn=Source\ Code\ Pro\ Light:h12
 
-" BufSurf settings
-nmap <leader>b :BufSurfBack<CR>
-nmap <leader>f :BufSurfForward<CR>
-
 set runtimepath^=~/.vim/bundle/ctrlp.vim
 
 " Ignore flex directory when searching with ctrlp
