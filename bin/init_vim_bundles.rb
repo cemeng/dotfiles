@@ -21,27 +21,21 @@ end
 all_the_things = %w(
   git://github.com/tpope/vim-endwise.git
   git://github.com/tpope/vim-fugitive.git
-  git://github.com/tpope/vim-git.git
   git://github.com/tpope/vim-markdown.git
   git://github.com/tpope/vim-rails.git
   git://github.com/tpope/vim-surround.git
-  git://github.com/vim-ruby/vim-ruby.git
   git://github.com/kchmck/vim-coffee-script.git
   git://github.com/kien/ctrlp.vim.git
-  git://github.com/ton/vim-bufsurf.git
-  git://github.com/godlygeek/tabular.git
   git://github.com/scrooloose/nerdtree.git
   git://github.com/rking/ag.vim
-)
-
-# Trying these new shiny things
-experimentals = %w(
   git://github.com/scrooloose/syntastic.git
   git://github.com/bling/vim-airline.git
   git://github.com/airblade/vim-gitgutter.git
 )
 
-# git://github.com/Lokaltog/vim-powerline.git
+# Trying these new shiny things
+experimentals = %w()
+
 all_the_things = all_the_things + experimentals
 
 FileUtils.cd(bundles_dir)
