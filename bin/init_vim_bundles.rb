@@ -30,9 +30,9 @@ plugins = %w(
   git://github.com/rking/ag.vim
   git://github.com/scrooloose/syntastic.git
   git://github.com/bling/vim-airline.git
-  git://github.com/airblade/vim-gitgutter.git
 )
 
+#  git://github.com/airblade/vim-gitgutter.git
 FileUtils.cd(bundles_dir)
 puts 'Installing plugins'
 plugins.each do |url|
