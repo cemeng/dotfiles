@@ -101,8 +101,13 @@ let g:rails_projections = {
       \   "related": "app/models/%s.rb"
       \ },
       \ "app/importers/*_importer.rb": {
-      \   "command": "importer",
-      \   "test:": "spec/impoters/%s_spec.rb"
+      \   "command": "imp",
+      \ },
+      \ "app/exporters/*_exporter.rb": {
+      \   "command": "exp",
+      \ },
+      \ "app/services/*.rb": {
+      \   "command": "service"
       \ },
       \ "app/controllers/*_controller.rb": {
       \   "command": "controller",
