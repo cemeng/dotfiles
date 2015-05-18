@@ -21,6 +21,7 @@ end
 plugins = %w(
   git://github.com/tpope/vim-endwise.git
   git://github.com/tpope/vim-fugitive.git
+  git://github.com/tpope/vim-haml.git
   git://github.com/tpope/vim-markdown.git
   git://github.com/tpope/vim-rails.git
   git://github.com/tpope/vim-surround.git
@@ -30,6 +31,7 @@ plugins = %w(
   git://github.com/rking/ag.vim
   git://github.com/bling/vim-airline.git
   git://github.com/airblade/vim-gitgutter.git
+  git://github.com/burnettk/vim-angular.git
 )
 
 #  git://github.com/scrooloose/syntastic.git

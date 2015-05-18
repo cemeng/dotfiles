@@ -69,7 +69,7 @@ set gfn=Source\ Code\ Pro\ Light:h12
 set runtimepath^=~/.vim/bundle/ctrlp.vim
 
 " Ignore flex directory when searching with ctrlp
-set wildignore+=*/flex/*,*/source_maps/*,*/tmp/*
+set wildignore+=*/flex/*,*/source_maps/*,*/tmp/*,*/db/migrate/*,*/bin/*,*/bower_components/*
 
 " Fold indentation coffeescript - hit zi to toggle
 au BufNewFile,BufReadPost *.coffee setl foldmethod=indent nofoldenable
