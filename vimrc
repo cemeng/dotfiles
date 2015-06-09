@@ -56,7 +56,7 @@ set t_Co=256
 " Solarized Theme Configuration
 syntax enable
 set background=dark
-colorscheme Tomorrow-Night
+colorscheme Tomorrow-Night-Bright
 
 " remove trailing whitespace upon saving
 autocmd FileType * autocmd BufWritePre <buffer> :%s/\s\+$//e
