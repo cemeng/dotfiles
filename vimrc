@@ -35,6 +35,7 @@ NeoBundle 'rking/ag.vim'
 NeoBundle 'bling/vim-airline'
 NeoBundle 'airblade/vim-gitgutter'
 NeoBundle 'burnettk/vim-angular'
+NeoBundle 'Valloric/YouCompleteMe'
 " NeoBundle 'scrooloose/syntastic'
 
 " You can specify revision/branch/tag.
@@ -107,7 +108,7 @@ set t_Co=256
 " Solarized Theme Configuration
 syntax enable
 set background=dark
-colorscheme Tomorrow-Night-Bright
+colorscheme bubblegum
 
 " remove trailing whitespace upon saving
 autocmd FileType * autocmd BufWritePre <buffer> :%s/\s\+$//e
