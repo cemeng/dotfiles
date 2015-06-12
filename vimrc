@@ -1,3 +1,56 @@
+"NeoBundle Scripts-----------------------------
+if has('vim_starting')
+  if &compatible
+    set nocompatible               " Be iMproved
+  endif
+
+  " Required:
+  set runtimepath+=/Users/cemeng/.vim/bundle/neobundle.vim/
+endif
+
+" Required:
+call neobundle#begin(expand('/Users/cemeng/.vim/bundle'))
+
+" Let NeoBundle manage NeoBundle
+" Required:
+NeoBundleFetch 'Shougo/neobundle.vim'
+
+" Add or remove your Bundles here:
+" NeoBundle 'Shougo/neosnippet.vim'
+" NeoBundle 'Shougo/neosnippet-snippets'
+NeoBundle 'ctrlpvim/ctrlp.vim'
+NeoBundle 'flazz/vim-colorschemes'
+
+NeoBundle 'tpope/vim-endwise'
+NeoBundle 'tpope/vim-fugitive'
+NeoBundle 'tpope/vim-haml'
+NeoBundle 'tpope/vim-markdown'
+NeoBundle 'tpope/vim-rails'
+NeoBundle 'tpope/vim-surround'
+NeoBundle 'kchmck/vim-coffee-script'
+" NeoBundle 'kien/ctrlp.vim'
+NeoBundle 'scrooloose/nerdtree'
+NeoBundle 'rking/ag.vim'
+
+NeoBundle 'bling/vim-airline'
+NeoBundle 'airblade/vim-gitgutter'
+NeoBundle 'burnettk/vim-angular'
+" NeoBundle 'scrooloose/syntastic'
+
+" You can specify revision/branch/tag.
+" NeoBundle 'Shougo/vimshell', { 'rev' : '3787e5' }
+
+" Required:
+call neobundle#end()
+
+" Required:
+filetype plugin indent on
+
+" If there are uninstalled bundles found on startup,
+" this will conveniently prompt you to install them.
+NeoBundleCheck
+"End NeoBundle Scripts-------------------------
+
 set nocompatible
 
 set number
@@ -14,8 +67,6 @@ syntax on
 
 let mapleader = ","
 
-call pathogen#infect()
-call pathogen#helptags()
 filetype off
 syntax on
 filetype plugin indent on
@@ -66,7 +117,7 @@ autocmd FileType * autocmd BufWritePre <buffer> :%s/\s\+$//e
 " System font: Monaco
 set gfn=Source\ Code\ Pro\ Light:h12
 
-set runtimepath^=~/.vim/bundle/ctrlp.vim
+" set runtimepath^=~/.vim/bundle/ctrlp.vim
 
 " Ignore flex directory when searching with ctrlp
 set wildignore+=*/flex/*,*/source_maps/*,*/tmp/*,*/db/migrate/*,*/bin/*,*/bower_components/*,*/node_modules/*
@@ -90,7 +141,7 @@ let g:rubycomplete_rails = 1
 " Use silver search to replace ack
 let g:ackprg = 'ag --nogroup --nocolor --column'
 
-let g:syntastic_ruby_checkers = ['mri', 'rubocop']
+" let g:syntastic_ruby_checkers = ['mri', 'rubocop']
 
 " vim.rails projection
 let g:rails_projections = {
