@@ -105,6 +105,7 @@ vnoremap <C-k> :m-2<CR>gv=gv
 " COLOR CONFIG
 set t_Co=256
 " Solarized Theme Configuration
+" Prefered themes: bubblegum, Tomorrow Night *
 syntax enable
 set background=dark
 colorscheme bubblegum
