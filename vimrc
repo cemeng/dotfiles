@@ -34,11 +34,11 @@ NeoBundle "rking/ag.vim"
 NeoBundle "bling/vim-airline"
 NeoBundle "airblade/vim-gitgutter"
 NeoBundle "burnettk/vim-angular"
+" Maybe need to write my own scheme switcher
+NeoBundle "xolox/vim-misc"
+NeoBundle "xolox/vim-colorscheme-switcher"
 " NeoBundle "Valloric/YouCompleteMe"
 " NeoBundle 'scrooloose/syntastic'
-
-" You can specify revision/branch/tag.
-" NeoBundle 'Shougo/vimshell', { 'rev' : '3787e5' }
 
 " Required:
 call neobundle#end()
@@ -105,7 +105,9 @@ vnoremap <C-k> :m-2<CR>gv=gv
 " COLOR CONFIG
 set t_Co=256
 " Solarized Theme Configuration
-" Prefered themes: bubblegum, Tomorrow Night *
+" Prefered themes:
+"   - standard: bubblegum, Tomorrow Night *
+"   - dark: bvemu
 syntax enable
 set background=dark
 colorscheme bubblegum
