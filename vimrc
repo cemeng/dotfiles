@@ -110,6 +110,7 @@ set t_Co=256
 "   - dark: bvemu
 syntax enable
 set background=dark
+" preferred colorscheme: bubblegum Tomorrow-Night
 colorscheme bubblegum
 
 " remove trailing whitespace upon saving
@@ -193,3 +194,5 @@ if has("autocmd")
 endif
 " show airline even when no split
 set laststatus=2
+
+autocmd filetype crontab setlocal nobackup nowritebackup
