@@ -107,11 +107,11 @@ set t_Co=256
 " Solarized Theme Configuration
 " Prefered themes:
 "   - standard: bubblegum, Tomorrow Night *
-"   - dark: bvemu
+"   - dark: bvemu, chance-of-storm
 syntax enable
 set background=dark
 " preferred colorscheme: bubblegum Tomorrow-Night
-colorscheme bubblegum
+colorscheme chance-of-storm
 
 " remove trailing whitespace upon saving
 autocmd FileType * autocmd BufWritePre <buffer> :%s/\s\+$//e
