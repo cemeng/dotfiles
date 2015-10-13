@@ -134,6 +134,9 @@ nnoremap <down> <nop>
 nnoremap <left> <nop>
 nnoremap <right> <nop>
 
+" Make sticky shift w to save
+:command W w
+
 " Remap VIM 0 to first non-blank character
 map 0 ^
 
