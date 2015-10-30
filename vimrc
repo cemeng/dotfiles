@@ -16,8 +16,6 @@ call neobundle#begin(expand('/Users/cemeng/.vim/bundle'))
 NeoBundleFetch "Shougo/neobundle.vim"
 
 " Add or remove your Bundles here:
-" NeoBundle 'Shougo/neosnippet.vim'
-" NeoBundle 'Shougo/neosnippet-snippets'
 NeoBundle "ctrlpvim/ctrlp.vim"
 NeoBundle "flazz/vim-colorschemes"
 
