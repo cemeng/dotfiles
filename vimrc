@@ -16,29 +16,28 @@ call neobundle#begin(expand('/Users/cemeng/.vim/bundle'))
 NeoBundleFetch "Shougo/neobundle.vim"
 
 " Add or remove your Bundles here:
-" NeoBundle 'Shougo/neosnippet.vim'
-" NeoBundle 'Shougo/neosnippet-snippets'
 NeoBundle "ctrlpvim/ctrlp.vim"
 NeoBundle "flazz/vim-colorschemes"
 
+NeoBundle "rking/ag.vim" " :Ag
+NeoBundle "scrooloose/nerdtree" " directory
 NeoBundle "tpope/vim-endwise"
-NeoBundle "tpope/vim-fugitive"
+NeoBundle "tpope/vim-fugitive"  " :Gblame
 NeoBundle "tpope/vim-haml"
 NeoBundle "tpope/vim-markdown"
 NeoBundle "tpope/vim-rails"
 NeoBundle "tpope/vim-surround"
 NeoBundle "kchmck/vim-coffee-script"
-NeoBundle "scrooloose/nerdtree"
-NeoBundle "rking/ag.vim"
+NeoBundle "leafgarland/typescript-vim"
 
 NeoBundle "bling/vim-airline"
 NeoBundle "airblade/vim-gitgutter"
-NeoBundle "burnettk/vim-angular"
+NeoBundle "scrooloose/syntastic"
+
 " Maybe need to write my own scheme switcher
 NeoBundle "xolox/vim-misc"
 NeoBundle "xolox/vim-colorscheme-switcher"
 " NeoBundle "Valloric/YouCompleteMe"
-" NeoBundle 'scrooloose/syntastic'
 
 " Required:
 call neobundle#end()
