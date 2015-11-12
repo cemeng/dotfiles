@@ -49,3 +49,5 @@ export BUNDLER_EDITOR="mvim"
 # export RUBY_HEAP_MIN_SLOTS=800000 # obsolte for ruby 2.1 apparently
 # export RUBY_FREE_MIN=600000
 # export LD_PRELOAD=/usr/lib/libtcmalloc_minimal.so
+
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.7.0_79.jdk/Contents/Home
