@@ -34,9 +34,20 @@ NeoBundle "bling/vim-airline"
 NeoBundle "airblade/vim-gitgutter"
 NeoBundle "scrooloose/syntastic"
 
-" Maybe need to write my own scheme switcher
-NeoBundle "xolox/vim-misc"
-NeoBundle "xolox/vim-colorscheme-switcher"
+NeoBundle 'Shougo/vimproc.vim', {
+      \ 'build' : {
+      \     'windows' : 'tools\\update-dll-mingw',
+      \     'cygwin' : 'make -f make_cygwin.mak',
+      \     'mac' : 'make -f make_mac.mak',
+      \     'linux' : 'make',
+      \     'unix' : 'gmake',
+      \    },
+      \ }
+NeoBundle 'Quramy/tsuquyomi'
+
+" For colorscheme switchin
+" NeoBundle "xolox/vim-misc"
+" NeoBundle "xolox/vim-colorscheme-switcher"
 " NeoBundle "Valloric/YouCompleteMe"
 
 " Required:
