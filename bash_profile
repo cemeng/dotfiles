@@ -10,8 +10,6 @@ alias fs="be foreman start"
 alias bq="cd ~/prj/rexroth/beqik2"
 alias vg="sed -i "" "s/virgil/virgildev/g" flex/BeQIK2-app.xml"
 alias uvg="git co -- flex/BeQIK2-app.xml"
-alias lndr="bq && ln -s /Volumes/BRAUDWF/BRAUPUBLISH drawings"
-alias rbq='"/Applications/Adobe Flash Builder 4.6/sdks/4.6.0/bin/adl" -runtime "/Applications/Adobe Flash Builder 4.6/sdks/4.6.0/runtimes/air/mac" "/Users/cemeng/prj/rexroth/beqik2-workspace/bin-debug/BeQIK2-app.xml" /Users/cemeng/prj/rexroth/beqik2-workspace/bin-debug -- -server=beqik2au.dev:5000 -appname=virgil'
 
 # Git aliases
 alias g="git st"
@@ -21,12 +19,10 @@ alias gss="git stash save"
 alias gsl="git stash list"
 alias grc="git rebase --continue"
 alias glog="git log --graph --pretty=format:'%C(yellow)%h%Cblue%d%Creset %s %C(white) %an, %ar%Creset'"
-alias gorg="git br -r|grep origin"
 alias grpo="git remote prune origin"
 
 # Projects
-alias actsky="cd ~/prj/activ-sky"
-alias admc="cd ~/prj/admin-console"
+alias mec="cd ~/prj/mobileeyeclinic"
 
 export PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:/usr/local/flex/bin:~/dotfiles/bin:/usr/local/sbin:~/prj/ansible/bin
 export PATH=$PATH:~/prj/rexroth/beqik2/node_modules/.bin
