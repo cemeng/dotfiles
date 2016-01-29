@@ -92,6 +92,9 @@ set softtabstop=2
 set shiftwidth=2
 set colorcolumn=120
 
+au FileType groovy setl sw=4 sts=4 et
+au FileType gsp setl sw=4 sts=4 et
+
 " turn mouse on
 set mouse=a
 
