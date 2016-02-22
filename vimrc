@@ -162,8 +162,9 @@ let g:rubycomplete_rails = 1
 let g:ackprg = 'ag --nogroup --nocolor --column'
 
 " let g:syntastic_ruby_checkers = ['mri', 'rubocop']
-let g:syntastic_typescript_checkers = ['tsc', 'tslint']
-let g:syntastic_typescript_tsc_args = '--target ES5 --noImplicitReturns'
+let g:syntastic_typescript_checkers = ["tsc", "tslint"]
+let g:syntastic_typescript_tsc_args = "--target ES5 --noImplicitReturns"
+let g:syntastic_typescript_tsc_fname = ""
 
 " vim.rails projection
 let g:rails_projections = {
