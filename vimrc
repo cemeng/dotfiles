@@ -29,6 +29,7 @@ NeoBundle "tpope/vim-rails"
 NeoBundle "tpope/vim-surround"
 NeoBundle "kchmck/vim-coffee-script"
 NeoBundle "leafgarland/typescript-vim"
+NeoBundle "NathanNeff/grails-vim"
 
 NeoBundle "bling/vim-airline"
 NeoBundle "airblade/vim-gitgutter"
@@ -137,7 +138,7 @@ set gfn=Source\ Code\ Pro\ Light:h12
 " set runtimepath^=~/.vim/bundle/ctrlp.vim
 
 " Ignore flex directory when searching with ctrlp
-set wildignore+=*/flex/*,*/source_maps/*,*/tmp/*,*/db/migrate/*,*/bin/*,*/bower_components/*,*/node_modules/*,*/target/*
+set wildignore+=*/flex/*,*/source_maps/*,*/tmp/*,*/db/migrate/*,*/bin/*,*/bower_components/*,*/node_modules/*,*/target/*,*/build/*,*.class
 
 " Fold indentation coffeescript - hit zi to toggle
 au BufNewFile,BufReadPost *.coffee setl foldmethod=indent nofoldenable
