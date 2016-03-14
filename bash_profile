@@ -48,3 +48,7 @@ export BUNDLER_EDITOR="mvim"
 # export LD_PRELOAD=/usr/lib/libtcmalloc_minimal.so
 
 export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.7.0_79.jdk/Contents/Home
+
+# GRAILS
+export SDKMAN_DIR="/Users/cemeng/.sdkman"
+[[ -s "/Users/cemeng/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/cemeng/.sdkman/bin/sdkman-init.sh"
