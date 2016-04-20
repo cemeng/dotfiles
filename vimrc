@@ -118,14 +118,12 @@ vnoremap <C-k> :m-2<CR>gv=gv
 
 " COLOR CONFIG
 set t_Co=256
-" Solarized Theme Configuration
 " Prefered themes:
 "   - standard: bubblegum, Tomorrow Night *
-"   - dark: bvemu, chance-of-storm
+"   - dark: bvemu, chance-of-storm, Tomorrow-Night-Bright
 syntax enable
 set background=dark
-" preferred colorscheme: bubblegum Tomorrow-Night
-colorscheme chance-of-storm
+colorscheme Tomorrow-Night-Bright
 
 " remove trailing whitespace upon saving
 autocmd FileType * autocmd BufWritePre <buffer> :%s/\s\+$//e
