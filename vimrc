@@ -44,7 +44,7 @@ NeoBundle 'Shougo/vimproc.vim', {
       \     'unix' : 'gmake',
       \    },
       \ }
-NeoBundle 'Quramy/tsuquyomi'
+" NeoBundle 'Quramy/tsuquyomi'
 
 " For colorscheme switchin
 " NeoBundle "xolox/vim-misc"
