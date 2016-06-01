@@ -4,7 +4,7 @@ alias sp=".bin/rspec spec"
 alias prails="bin/pry -r ./config/environment"
 alias rgm="rails generate migration"
 alias dbm="rake db:migrate && rake spec:prepare"
-alias fs="be foreman start"
+alias fs="foreman start"
 
 # BeQIK aliases
 alias bq="cd ~/prj/rexroth/beqik2"
