@@ -35,7 +35,7 @@ export MANPATH=/Users/cemeng/prj/ansible/docs/man
 # CHRUBY
 source /usr/local/share/chruby/chruby.sh
 source /usr/local/share/chruby/auto.sh
-chruby ruby-2.2.3
+chruby ruby-2.3.1
 
 export EDITOR="vim"
 export BUNDLER_EDITOR="mvim"
