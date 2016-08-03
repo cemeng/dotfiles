@@ -8,12 +8,11 @@ alias fs="foreman start"
 
 # BeQIK aliases
 alias bq="cd ~/prj/rexroth/beqik2"
-alias vg="sed -i "" "s/virgil/virgildev/g" flex/BeQIK2-app.xml"
-alias uvg="git co -- flex/BeQIK2-app.xml"
 
 # Git aliases
-alias g="git st"
+alias g="git status"
 alias ga="git add"
+alias gci="git commit"
 alias gaa="git add --all"
 alias gss="git stash save"
 alias gsl="git stash list"
@@ -22,6 +21,7 @@ alias glog="git log --graph --pretty=format:'%C(yellow)%h%Cblue%d%Creset %s %C(w
 alias grpo="git remote prune origin"
 
 # Projects
+alias hg="cd ~/prj/coreplatforms-hagrid"
 alias mec="cd ~/prj/mobileeyeclinic"
 
 export PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:/usr/local/flex/bin:~/dotfiles/bin:/usr/local/sbin:~/prj/ansible/bin
@@ -33,9 +33,9 @@ export ANSIBLE_LIBRARY=/Users/cemeng/prj/ansible/library:/usr/share/ansible/
 export MANPATH=/Users/cemeng/prj/ansible/docs/man
 
 # CHRUBY
-source /usr/local/share/chruby/chruby.sh
-source /usr/local/share/chruby/auto.sh
-chruby ruby-2.3.1
+# source /usr/local/share/chruby/chruby.sh
+# source /usr/local/share/chruby/auto.sh
+# chruby ruby-2.3.1
 
 export EDITOR="vim"
 export BUNDLER_EDITOR="mvim"
@@ -52,3 +52,6 @@ export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_91.jdk/Contents/Home
 # GRAILS
 export SDKMAN_DIR="/Users/cemeng/.sdkman"
 [[ -s "/Users/cemeng/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/cemeng/.sdkman/bin/sdkman-init.sh"
+
+# Hm RVM ..
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" # Load RVM function
