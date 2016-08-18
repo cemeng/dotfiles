@@ -33,9 +33,9 @@ export ANSIBLE_LIBRARY=/Users/cemeng/prj/ansible/library:/usr/share/ansible/
 export MANPATH=/Users/cemeng/prj/ansible/docs/man
 
 # CHRUBY
-# source /usr/local/share/chruby/chruby.sh
-# source /usr/local/share/chruby/auto.sh
-# chruby ruby-2.3.1
+source /usr/local/share/chruby/chruby.sh
+source /usr/local/share/chruby/auto.sh
+chruby ruby-2.1.8
 
 export EDITOR="vim"
 export BUNDLER_EDITOR="mvim"
@@ -52,6 +52,3 @@ export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_91.jdk/Contents/Home
 # GRAILS
 export SDKMAN_DIR="/Users/cemeng/.sdkman"
 [[ -s "/Users/cemeng/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/cemeng/.sdkman/bin/sdkman-init.sh"
-
-# Hm RVM ..
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" # Load RVM function
