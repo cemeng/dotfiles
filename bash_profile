@@ -1,6 +1,7 @@
 # Ruby and Rails aliases
 alias be="bundle exec"
-alias sp=".bin/rspec spec"
+alias sp="SKIP_COVERAGE=true rspec"
+alias spr="SKIP_COVERAGE=true be spring rspec"
 alias prails="bin/pry -r ./config/environment"
 alias rgm="rails generate migration"
 alias dbm="rake db:migrate && rake spec:prepare"
