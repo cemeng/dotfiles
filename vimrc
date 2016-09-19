@@ -135,11 +135,11 @@ set gfn=Source\ Code\ Pro\ Light:h12
 
 " set runtimepath^=~/.vim/bundle/ctrlp.vim
 
-" Ignore flex directory when searching with ctrlp
+" Ignore these directories when searching with ctrlp
 set wildignore+=*/flex/*,*/source_maps/*,*/tmp/*,*/db/migrate/*,*/bin/*,*/bower_components/*,*/node_modules/*,*/target/*,*/build/*,*.class
 
-" Fold indentation coffeescript - hit zi to toggle
-au BufNewFile,BufReadPost *.coffee setl foldmethod=indent nofoldenable
+" thor file is essentially ruby
+au BufRead,BufNewFile *.thor set filetype=ruby
 
 " Disabling arrow keys for navigation
 nnoremap <up> <nop>
