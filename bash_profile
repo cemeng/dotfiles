@@ -1,6 +1,6 @@
 # Ruby and Rails aliases
 alias be="bundle exec"
-alias sp="SKIP_COVERAGE=true rspec"
+alias sp="SKIP_COVERAGE=true be rspec"
 alias spr="SKIP_COVERAGE=true be spring rspec"
 alias prails="bin/pry -r ./config/environment"
 alias rgm="rails generate migration"
@@ -21,8 +21,11 @@ alias grc="git rebase --continue"
 alias glog="git log --graph --pretty=format:'%C(yellow)%h%Cblue%d%Creset %s %C(white) %an, %ar%Creset'"
 alias grpo="git remote prune origin"
 
-# Projects
+# Fairfax
 alias hg="cd ~/prj/coreplatforms-hagrid"
+alias cn="cd ~/prj/china-newsletters"
+
+# Others
 alias mec="cd ~/prj/mobileeyeclinic"
 
 export PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:/usr/local/flex/bin:~/dotfiles/bin:/usr/local/sbin:~/prj/ansible/bin
