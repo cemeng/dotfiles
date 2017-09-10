@@ -34,6 +34,7 @@ NeoBundle "NathanNeff/grails-vim"
 NeoBundle "bling/vim-airline"
 NeoBundle "airblade/vim-gitgutter"
 NeoBundle "scrooloose/syntastic"
+NeoBundle "fatih/vim-go"
 
 NeoBundle 'Shougo/vimproc.vim', {
       \ 'build' : {
@@ -95,6 +96,7 @@ set colorcolumn=120
 
 au FileType groovy setl sw=4 sts=4 et
 au FileType gsp setl sw=4 sts=4 et
+au FileType go setl sw=4 sts=4 et
 
 " turn mouse on
 set mouse=a
