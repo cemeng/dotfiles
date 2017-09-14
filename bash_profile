@@ -44,5 +44,5 @@ export SDKMAN_DIR="/Users/cemeng/.sdkman"
 
 # GOLANG
 export GOROOT=/usr/local/opt/go/libexec
-export GOPATH=$HOME/.go:$HOME/prj
+export GOPATH=$HOME/.go
 export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
