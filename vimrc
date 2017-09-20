@@ -27,8 +27,6 @@ NeoBundle "tpope/vim-haml"
 NeoBundle "tpope/vim-markdown"
 NeoBundle "tpope/vim-rails"
 NeoBundle "tpope/vim-surround"
-NeoBundle "kchmck/vim-coffee-script"
-NeoBundle "leafgarland/typescript-vim"
 NeoBundle "NathanNeff/grails-vim"
 
 NeoBundle "bling/vim-airline"
@@ -96,7 +94,7 @@ set colorcolumn=120
 
 au FileType groovy setl sw=4 sts=4 et
 au FileType gsp setl sw=4 sts=4 et
-au FileType go setl sw=4 sts=4 et
+au FileType go setl sw=4 sts=4 ts=4 et
 
 " turn mouse on
 set mouse=a
@@ -148,9 +146,6 @@ nnoremap <up> <nop>
 nnoremap <down> <nop>
 nnoremap <left> <nop>
 nnoremap <right> <nop>
-
-" Make sticky shift w to save
-:command W w
 
 " Remap VIM 0 to first non-blank character
 map 0 ^
