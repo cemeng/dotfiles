@@ -21,6 +21,9 @@ alias grpo="git remote prune origin"
 # Fairfax
 alias hg="cd ~/prj/coreplatforms-hagrid"
 alias cn="cd ~/prj/china-newsletters"
+alias k="kubectl"
+alias kgp="kubectl get pod"
+alias krm="kubectl delete"
 
 # Others
 alias mec="cd ~/prj/mobileeyeclinic"
