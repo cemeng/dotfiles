@@ -24,7 +24,7 @@ alias cn="cd ~/prj/china-newsletters"
 alias k="kubectl"
 alias kgp="kubectl get pod"
 alias krm="kubectl delete"
-source ~/.bluestrap
+[ -f ~/.bluestrap ] && source ~/.bluestrap
 
 # Others
 alias mec="cd ~/prj/mobileeyeclinic"
@@ -39,7 +39,6 @@ chruby ruby-2.1.8
 export EDITOR="vim"
 export BUNDLER_EDITOR="mvim"
 
-# export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_91.jdk/Contents/Home
 export JAVA_HOME=`/usr/libexec/java_home`
 
 # GRAILS
@@ -48,7 +47,7 @@ export SDKMAN_DIR="/Users/cemeng/.sdkman"
 
 # GOLANG
 export GOROOT=/usr/local/opt/go/libexec
-export GOPATH=$HOME/workspace/gocode # Fairfaxxx
+export GOPATH=$HOME/workspace/gocode # Fairfax convention
 export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
 
 eval "$(direnv hook bash)"
