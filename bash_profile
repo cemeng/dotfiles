@@ -24,6 +24,7 @@ alias cn="cd ~/prj/china-newsletters"
 alias k="kubectl"
 alias kgp="kubectl get pod"
 alias krm="kubectl delete"
+source ~/.bluestrap
 
 # Others
 alias mec="cd ~/prj/mobileeyeclinic"
@@ -47,7 +48,7 @@ export SDKMAN_DIR="/Users/cemeng/.sdkman"
 
 # GOLANG
 export GOROOT=/usr/local/opt/go/libexec
-export GOPATH=$HOME/.go
+export GOPATH=$HOME/workspace/gocode # Fairfaxxx
 export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
 
 eval "$(direnv hook bash)"
