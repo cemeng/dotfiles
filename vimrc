@@ -161,21 +161,11 @@ let g:ackprg = 'ag --nogroup --nocolor --column'
 let g:syntastic_typescript_checkers = ["tsc", "tslint"]
 let g:syntastic_typescript_tsc_args = "--target ES5 --noImplicitReturns"
 let g:syntastic_typescript_tsc_fname = ""
+let g:syntastic_go_checkers = ['go', 'golint', 'errcheck']
+let g:syntastic_aggregate_errors = 1
 
 " vim.rails projection
 let g:rails_projections = {
-      \ "app/serializers/*_serializer.rb": {
-      \   "command": "serializer",
-      \   "template": "class %SSerializer < ActiveModel::Serializer\nend",
-      \   "test": "spec/serializers/%s_spec.rb",
-      \   "related": "app/models/%s.rb"
-      \ },
-      \ "app/importers/*_importer.rb": {
-      \   "command": "imp",
-      \ },
-      \ "app/exporters/*_exporter.rb": {
-      \   "command": "exp",
-      \ },
       \ "app/services/*.rb": {
       \   "command": "service"
       \ },
