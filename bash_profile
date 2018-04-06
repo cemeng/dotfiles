@@ -24,7 +24,8 @@ alias cn="cd ~/prj/china-newsletters"
 alias k="kubectl"
 alias kgp="kubectl get pod"
 alias krm="kubectl delete"
-alias fgo="cd ~/workspace/gocode/src/bitbucket.org/ffxblue"
+alias fw="cd ~/workspace/"
+alias fwg="cd ~/workspace/gocode/src/bitbucket.org/ffxblue"
 [ -f ~/.bluestrap ] && source ~/.bluestrap
 
 # Others
