@@ -36,7 +36,7 @@ export PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:~/dotfiles
 # CHRUBY
 source /usr/local/share/chruby/chruby.sh
 source /usr/local/share/chruby/auto.sh
-chruby ruby-2.1.8
+chruby ruby-2.2.3
 
 export EDITOR="vim"
 export BUNDLER_EDITOR="mvim"
