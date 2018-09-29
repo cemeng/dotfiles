@@ -7,6 +7,9 @@ alias rgm="rails generate migration"
 alias dbm="rake db:migrate && rake spec:prepare"
 alias fs="foreman start"
 
+alias vim="/Applications/MacVim.app/Contents/MacOS/Vim"
+alias vi="/Applications/MacVim.app/Contents/MacOS/Vim"
+
 # Git aliases
 alias g="git status"
 alias ga="git add"
@@ -51,5 +54,8 @@ export SDKMAN_DIR="/Users/cemeng/.sdkman"
 export GOROOT=/usr/local/opt/go/libexec
 export GOPATH=$HOME/workspace/gocode
 export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
+
+# NODE
+export PATH="/usr/local/opt/node@8/bin:$PATH"
 
 eval "$(direnv hook bash)"
