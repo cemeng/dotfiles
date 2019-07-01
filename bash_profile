@@ -29,6 +29,7 @@ alias kgp="kubectl get pod"
 alias krm="kubectl delete"
 alias fw="cd ~/workspace/"
 alias fwg="cd ~/workspace/gocode/src/bitbucket.org/ffxblue"
+alias m="minikube"
 [ -f ~/.bluestrap ] && source ~/.bluestrap
 
 # Others
@@ -56,6 +57,6 @@ export GOPATH=$HOME/workspace/gocode
 export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
 
 # NODE
-export PATH="/usr/local/opt/node@8/bin:$PATH"
+export PATH=$PATH:/usr/local/opt/node@10/bin
 
 eval "$(direnv hook bash)"
