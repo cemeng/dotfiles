@@ -1,1 +1,0 @@
-mysqladmin -f -u root drop development_beqik2_au && mysqladmin -u root create development_beqik2_au && mysql -u root development_beqik2_au

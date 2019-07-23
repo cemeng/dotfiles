@@ -1,1 +1,0 @@
-/usr/local/mysql/bin/mysqld_safe --basedir=/usr/local/mysql --datadir=/usr/local/var/mysql --plugin-dir=/usr/local/mysql/lib/plugin --log-error=/usr/local/var/mysql/HOPE.local.err --pid-file=/usr/local/var/mysql/HOPE.local.pid
