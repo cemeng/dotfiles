@@ -23,3 +23,11 @@ chruby ruby-2.5.3 # scentregroup
 
 export EDITOR="vim"
 export BUNDLER_EDITOR="mvim"
+
+# Aliases
+alias dot="cd ~/dotfiles"
+alias prj="cd ~/prj"
+
+# Scentre
+alias is="cd ~/prj/identity_service"
+alias ic="cd ~/prj/identity_client"
