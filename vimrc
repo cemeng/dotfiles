@@ -31,7 +31,7 @@ NeoBundle "NathanNeff/grails-vim"
 
 NeoBundle "bling/vim-airline"
 NeoBundle "airblade/vim-gitgutter"
-NeoBundle "scrooloose/syntastic"
+NeoBundle "vim-syntastic/syntastic"
 NeoBundle "fatih/vim-go"
 
 NeoBundle 'Shougo/vimproc.vim', {
@@ -158,10 +158,6 @@ let g:rubycomplete_rails = 1
 let g:ackprg = 'ag --nogroup --nocolor --column'
 
 let g:syntastic_ruby_checkers = ['mri', 'rubocop']
-let g:syntastic_typescript_checkers = ["tsc", "tslint"]
-let g:syntastic_typescript_tsc_args = "--target ES5 --noImplicitReturns"
-let g:syntastic_typescript_tsc_fname = ""
-let g:syntastic_go_checkers = ['go', 'golint', 'errcheck']
 let g:syntastic_aggregate_errors = 1
 
 " vim.rails projection
@@ -199,5 +195,7 @@ if has("autocmd")
 endif
 " show airline even when no split
 set laststatus=2
+
+set colorcolumn=80
 
 autocmd filetype crontab setlocal nobackup nowritebackup
