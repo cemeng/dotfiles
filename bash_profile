@@ -31,3 +31,6 @@ alias prj="cd ~/prj"
 # Scentre
 alias is="cd ~/prj/identity_service"
 alias ic="cd ~/prj/identity_client"
+
+export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES
+eval "$(direnv hook bash)"
