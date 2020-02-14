@@ -28,9 +28,11 @@ export BUNDLER_EDITOR="mvim"
 alias dot="cd ~/dotfiles"
 alias prj="cd ~/prj"
 
-# Scentre
+# ScentreGroup
 alias is="cd ~/prj/identity_service"
 alias ic="cd ~/prj/identity_client"
+alias a0="cd ~/prj/auth0"
+alias ppp="cd ~/prj/partner_portal"
 
 export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES
 eval "$(direnv hook bash)"
