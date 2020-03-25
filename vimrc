@@ -32,7 +32,7 @@ NeoBundle "NathanNeff/grails-vim"
 NeoBundle "bling/vim-airline"
 NeoBundle "airblade/vim-gitgutter"
 NeoBundle "vim-syntastic/syntastic"
-NeoBundle "fatih/vim-go"
+NeoBundle "sheerun/vim-polyglot" " syntax highlight for jsx etc
 
 NeoBundle 'Shougo/vimproc.vim', {
       \ 'build' : {
@@ -43,7 +43,6 @@ NeoBundle 'Shougo/vimproc.vim', {
       \     'unix' : 'gmake',
       \    },
       \ }
-" NeoBundle 'Quramy/tsuquyomi'
 
 " For colorscheme switchin
 " NeoBundle "xolox/vim-misc"
