@@ -34,5 +34,10 @@ alias ic="cd ~/prj/identity_client"
 alias a0="cd ~/prj/auth0"
 alias ppp="cd ~/prj/partner_portal"
 
+# GOLANG
+export GOROOT=/usr/local/opt/go/libexec
+export GOPATH=$HOME/workspace/gocode
+export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
+
 export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES
 eval "$(direnv hook bash)"
