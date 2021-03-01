@@ -31,8 +31,8 @@ NeoBundle "NathanNeff/grails-vim"
 
 NeoBundle "bling/vim-airline"
 NeoBundle "airblade/vim-gitgutter"
-NeoBundle "vim-syntastic/syntastic"
 NeoBundle "sheerun/vim-polyglot" " syntax highlight for jsx etc
+NeoBundle "dense-analysis/ale"
 
 NeoBundle 'Shougo/vimproc.vim', {
       \ 'build' : {
@@ -156,8 +156,17 @@ let g:rubycomplete_rails = 1
 " Use silver search to replace ack
 let g:ackprg = 'ag --nogroup --nocolor --column'
 
-let g:syntastic_ruby_checkers = ['mri', 'rubocop']
-let g:syntastic_aggregate_errors = 1
+" ale
+let g:ale_fix_on_save = 1
+let g:ale_lint_on_enter = 0
+let g:ale_lint_on_text_changed = 'never'
+let g:ale_ruby_rubocop_executable = 'bin/rubocop'
+let g:ale_linters = {
+  \ 'javascript': ['eslint'],
+  \ 'ruby': ['rubocop', 'ruby'], }
+let g:ale_fixers = {
+  \ 'javascript': ['eslint', 'remove_trailing_lines', 'trim_whitespace'],
+  \ 'ruby': ['remove_trailing_lines', 'trim_whitespace'], }
 
 " vim.rails projection
 let g:rails_projections = {
