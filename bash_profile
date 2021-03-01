@@ -26,13 +26,23 @@ export BUNDLER_EDITOR="mvim"
 
 # Aliases
 alias dot="cd ~/dotfiles"
-alias prj="cd ~/prj"
+alias dev="cd ~/dev"
+alias ops="cd ~/ops"
+alias reload="source ~/.bash_profile"
 
-# ScentreGroup
-alias is="cd ~/prj/identity_service"
-alias ic="cd ~/prj/identity_client"
-alias a0="cd ~/prj/auth0"
-alias ppp="cd ~/prj/partner_portal"
+# ScentreGroup Dev
+alias is="cd ~/dev/identity_service"
+alias ic="cd ~/dev/identity_client"
+alias a0="cd ~/dev/auth0"
+alias ppp="cd ~/dev/partner_portal"
+alias tes="cd ~/dev/transactional-email-service"
+
+# ScentreGroup Ops
+export TF_PLUGIN_CACHE_DIR="$HOME/.terraform.d/plugins"
+export VAULT_ADDR="https://vault.scentregroup.cloud"
+alias tf="terraform"
+alias inf="cd ~/ops/infrastructure"
+
+alias python=/usr/local/bin/python3
 
 export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES
-eval "$(direnv hook bash)"
