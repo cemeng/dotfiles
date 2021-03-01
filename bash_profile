@@ -45,4 +45,9 @@ alias inf="cd ~/ops/infrastructure"
 
 alias python=/usr/local/bin/python3
 
+# GOLANG
+export GOROOT=/usr/local/opt/go/libexec
+export GOPATH=$HOME/workspace/gocode
+export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
+
 export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES
