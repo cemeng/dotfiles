@@ -4,7 +4,8 @@ This is my dev machine setup (MacOS), feel free to steal or draw inspiration fro
 
 ## New Laptop
 
-Go to root directory `cd ~`
-Clone this repo
-Run `bin/laptop-setup.sh`
+* Go to root directory `cd ~`
+* Clone this repo `git clone git@github.com:cemeng/dotfiles.git`
+* Check `bin/laptop-setup.sh` - ensure that it meets your requirements
+* Run `bin/laptop-setup.sh`
 

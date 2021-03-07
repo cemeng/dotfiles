@@ -15,11 +15,13 @@ alias glog="git log --graph --pretty=format:'%C(yellow)%h%Cblue%d%Creset %s %C(w
 alias grpo="git remote prune origin"
 
 export PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:~/dotfiles/bin:/usr/local/sbin
+# homebrew to add its path to $PATH
+eval "$(/opt/homebrew/bin/brew shellenv)"
 
 # CHRUBY
-source /usr/local/share/chruby/chruby.sh
-source /usr/local/share/chruby/auto.sh
-chruby ruby-2.5.3 # scentregroup
+source /opt/homebrew/opt/chruby/share/chruby/chruby.sh
+source /opt/homebrew/opt/chruby/share/chruby/auto.sh
+# chruby ruby-2.5.3 # scentregroup
 
 export EDITOR="vim"
 export BUNDLER_EDITOR="mvim"
