@@ -9,6 +9,8 @@ alias glog="git log --graph --pretty=format:'%C(yellow)%h%Cblue%d%Creset %s %C(w
 alias grpo="git remote prune origin"
 
 export PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:~/dotfiles/bin:/usr/local/sbin
+# homebrew to add its path to $PATH
+eval "$(/opt/homebrew/bin/brew shellenv)"
 
 export EDITOR="vim"
 export BUNDLER_EDITOR="mvim"
