@@ -1,9 +1,3 @@
-# Ruby and Rails aliases
-alias be="bundle exec"
-alias sp="SKIP_COVERAGE=true bin/rspec"
-alias prails="pry -r ./config/environment"
-alias dbm="rake db:migrate && rake spec:prepare"
-
 # Git aliases
 alias g="git status"
 alias ga="git add"
@@ -15,11 +9,6 @@ alias glog="git log --graph --pretty=format:'%C(yellow)%h%Cblue%d%Creset %s %C(w
 alias grpo="git remote prune origin"
 
 export PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:~/dotfiles/bin:/usr/local/sbin
-
-# CHRUBY
-source /usr/local/share/chruby/chruby.sh
-source /usr/local/share/chruby/auto.sh
-chruby ruby-2.5.3 # scentregroup
 
 export EDITOR="vim"
 export BUNDLER_EDITOR="mvim"
@@ -42,6 +31,9 @@ export TF_PLUGIN_CACHE_DIR="$HOME/.terraform.d/plugins"
 export VAULT_ADDR="https://vault.scentregroup.cloud"
 alias tf="terraform"
 alias inf="cd ~/ops/infrastructure"
+alias tfi="tf init"
+alias tfp="tf plan"
+alias k="kubectl"
 
 alias python=/usr/local/bin/python3
 
@@ -51,3 +43,15 @@ export GOPATH=$HOME/workspace/gocode
 export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
 
 export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES
+
+# Ruby and Rails aliases
+alias be="bundle exec"
+alias sp="SKIP_COVERAGE=true bin/rspec"
+alias prails="pry -r ./config/environment"
+alias dbm="rake db:migrate && rake spec:prepare"
+
+# CHRUBY
+source /usr/local/share/chruby/chruby.sh
+source /usr/local/share/chruby/auto.sh
+chruby ruby-2.5.3 # scentregroup
+
