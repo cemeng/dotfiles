@@ -18,6 +18,7 @@ brew install openssl
 brew install the_silver_searcher
 brew install tree
 brew install iterm2
+brew install fzf # fuzzy search
 
 # Softwares
 brew install alfred
