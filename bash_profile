@@ -36,6 +36,8 @@ alias inf="cd ~/ops/infrastructure"
 alias tfi="tf init"
 alias tfp="tf plan"
 alias k="kubectl"
+aliax kx="kubectx"
+alias kn="kubens"
 
 alias python=/usr/local/bin/python3
 
