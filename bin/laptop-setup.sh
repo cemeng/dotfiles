@@ -20,6 +20,7 @@ brew install tree
 brew install iterm2
 brew install fzf # fuzzy search
 brew install kubectx
+brew install helm
 
 # Softwares
 brew install alfred

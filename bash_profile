@@ -9,8 +9,15 @@ alias glog="git log --graph --pretty=format:'%C(yellow)%h%Cblue%d%Creset %s %C(w
 alias grpo="git remote prune origin"
 
 export PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:~/dotfiles/bin:/usr/local/sbin
-# homebrew to add its path to $PATH
-eval "$(/opt/homebrew/bin/brew shellenv)"
+
+# Homebrew to add its path to $PATH
+if [ -d "/opt/homebrew" ]
+then
+  # On Mac M1
+  eval "$(/opt/homebrew/bin/brew shellenv)"
+else
+  eval "$(/usr/local/Homebrew/bin/brew shellenv)"
+fi
 
 export EDITOR="vim"
 export BUNDLER_EDITOR="mvim"
@@ -36,7 +43,7 @@ alias inf="cd ~/ops/infrastructure"
 alias tfi="tf init"
 alias tfp="tf plan"
 alias k="kubectl"
-aliax kx="kubectx"
+alias kx="kubectx"
 alias kn="kubens"
 
 alias python=/usr/local/bin/python3
