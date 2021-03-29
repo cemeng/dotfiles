@@ -48,7 +48,11 @@ alias kn="kubens"
 alias gcal="gcloud auth list"
 alias gcsa="gcloud config set account"
 
-alias python=/usr/local/bin/python3
+source "/opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc"
+source "/opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc"
+
+# alias python=/usr/local/bin/python3
+alias python=/opt/homebrew/bin/python3
 
 # GOLANG
 export GOROOT=/usr/local/opt/go/libexec
@@ -64,6 +68,6 @@ alias prails="pry -r ./config/environment"
 alias dbm="rake db:migrate && rake spec:prepare"
 
 # CHRUBY
-source /usr/local/share/chruby/chruby.sh
-source /usr/local/share/chruby/auto.sh
-chruby ruby-2.5.3 # scentregroup
+# source /usr/local/share/chruby/chruby.sh
+# source /usr/local/share/chruby/auto.sh
+# chruby ruby-2.5.3 # scentregroup

@@ -21,6 +21,8 @@ brew install iterm2
 brew install fzf # fuzzy search
 brew install kubectx
 brew install helm
+brew install python
+brew install --cask google-cloud-sdk
 
 # Softwares
 brew install alfred
@@ -44,7 +46,8 @@ brew install go
 # Dotfiles
 cp ~/dotfiles/ackrc ~/.ackrc
 cp ~/dotfiles/agignore ~/.agignore
-cp ~/dotfiles/bash_profile ~/.bash_profile
+# TODO: fix below
+# cp ~/dotfiles/bash_profile ~/.bash_profile
 cp ~/dotfiles/gitconfig ~/.gitconfig
 cp ~/dotfiles/vimrc ~/.vimrc
 cp ~/dotfiles/zshrc ~/.zshrc
