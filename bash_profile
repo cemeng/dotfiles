@@ -45,6 +45,8 @@ alias tfp="tf plan"
 alias k="kubectl"
 alias kx="kubectx"
 alias kn="kubens"
+alias gcal="gcloud auth list"
+alias gcsa="gcloud config set account"
 
 alias python=/usr/local/bin/python3
 
@@ -65,4 +67,3 @@ alias dbm="rake db:migrate && rake spec:prepare"
 source /usr/local/share/chruby/chruby.sh
 source /usr/local/share/chruby/auto.sh
 chruby ruby-2.5.3 # scentregroup
-
