@@ -36,7 +36,7 @@ alias ppp="cd ~/dev/partner_portal"
 alias tes="cd ~/dev/transactional-email-service"
 
 # ScentreGroup Ops
-export TF_PLUGIN_CACHE_DIR="$HOME/.terraform.d/plugins"
+# export TF_PLUGIN_CACHE_DIR="$HOME/.terraform.d/plugins"
 export VAULT_ADDR="https://vault.scentregroup.cloud"
 alias tf="terraform"
 alias inf="cd ~/ops/infrastructure"
@@ -44,7 +44,7 @@ alias tfi="tf init"
 alias tfp="tf plan"
 alias k="kubectl"
 alias kx="kubectx"
-alias kn="kubens"
+alias ks="kubens"
 alias gcal="gcloud auth list"
 alias gcsa="gcloud config set account"
 
@@ -71,3 +71,5 @@ alias dbm="rake db:migrate && rake spec:prepare"
 # source /usr/local/share/chruby/chruby.sh
 # source /usr/local/share/chruby/auto.sh
 # chruby ruby-2.5.3 # scentregroup
+
+export TF_VERSION=0.14.11

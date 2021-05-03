@@ -29,7 +29,7 @@ NeoBundle "tpope/vim-rails"
 NeoBundle "tpope/vim-surround"
 NeoBundle "NathanNeff/grails-vim"
 
-NeoBundle "bling/vim-airline"
+" NeoBundle "vim-airline/vim-airline"
 NeoBundle "airblade/vim-gitgutter"
 NeoBundle "sheerun/vim-polyglot" " syntax highlight for jsx etc
 NeoBundle "dense-analysis/ale"
