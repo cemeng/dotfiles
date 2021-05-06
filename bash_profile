@@ -19,6 +19,8 @@ else
   eval "$(/usr/local/Homebrew/bin/brew shellenv)"
 fi
 
+export BREW_PREFIX=`brew --prefix`
+
 export EDITOR="vim"
 export BUNDLER_EDITOR="mvim"
 
@@ -48,11 +50,10 @@ alias ks="kubens"
 alias gcal="gcloud auth list"
 alias gcsa="gcloud config set account"
 
-source "/opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc"
-source "/opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc"
+source "${BREW_PREFIX}/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc"
+source "${BREW_PREFIX}/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc"
 
-# alias python=/usr/local/bin/python3
-alias python=/opt/homebrew/bin/python3
+alias python="${BREW_PREFIX}/bin/python3"
 
 # GOLANG
 export GOROOT=/usr/local/opt/go/libexec
