@@ -28,6 +28,8 @@ export BUNDLER_EDITOR="mvim"
 alias dot="cd ~/dotfiles"
 alias dev="cd ~/dev"
 alias ops="cd ~/ops"
+alias inf="cd ~/ops/infrastructure"
+alias iam="cd ~/ops/infrastructure-cloud-iam"
 alias reload="source ~/.bash_profile"
 
 # ScentreGroup Dev
@@ -41,7 +43,6 @@ alias tes="cd ~/dev/transactional-email-service"
 # export TF_PLUGIN_CACHE_DIR="$HOME/.terraform.d/plugins"
 export VAULT_ADDR="https://vault.scentregroup.cloud"
 alias tf="terraform"
-alias inf="cd ~/ops/infrastructure"
 alias tfi="tf init"
 alias tfp="tf plan"
 alias k="kubectl"
@@ -69,8 +70,8 @@ alias prails="pry -r ./config/environment"
 alias dbm="rake db:migrate && rake spec:prepare"
 
 # CHRUBY
-# source /usr/local/share/chruby/chruby.sh
-# source /usr/local/share/chruby/auto.sh
-# chruby ruby-2.5.3 # scentregroup
+source /usr/local/share/chruby/chruby.sh
+source /usr/local/share/chruby/auto.sh
+chruby ruby-2.5.3 # scentregroup
 
 export TF_VERSION=0.14.11
