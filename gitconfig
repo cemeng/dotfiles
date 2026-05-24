@@ -1,0 +1,10 @@
+[color]
+	ui = true
+[core]
+	editor = nvim
+[push]
+	default = current
+
+# Local identity — name and email live in ~/.gitconfig.local
+[include]
+	path = ~/.gitconfig.local
