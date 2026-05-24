@@ -23,7 +23,9 @@ brew install fzf # fuzzy search
 brew install kubectx
 brew install helm
 brew install python
-brew install --cask google-cloud-sdk
+if ! command -v gcloud >/dev/null; then
+  brew install --cask google-cloud-sdk
+fi
 brew install awscli
 brew tap hashicorp/tap
 brew install hashicorp/tap/terraform
